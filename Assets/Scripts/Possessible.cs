@@ -6,15 +6,28 @@ public class Possessible : MonoBehaviour {
 	bool possessable;
 	bool isPossessed = false;
 	int possDelay;
+	Animator anim;
 	// Use this for initialization
 	void Start () {
 		possDelay = 0;
 		possessable = false;
+		anim = GetComponent<Animator> ();
 	}
 
 	void Update () { 
 		if (isPossessed) {
-			transform.position = player.transform.position;
+			player.transform.position = transform.position;
+			player.transform.rotation = transform.rotation;
+			if (Input.GetAxisRaw ("Vertical") > 0) {
+				anim.SetInteger ("AnimState", 1);
+			} else if (Input.GetAxisRaw ("Vertical") < 0) {
+				anim.SetInteger ("AnimState", -1);
+			} else {
+				anim.SetInteger ("AnimState", 0);
+			}
+			if (Input.GetAxisRaw ("Horizontal") != 0) {
+				transform.Rotate (0, Input.GetAxisRaw ("Horizontal")*80.0f * Time.deltaTime, 0, Space.World);
+			}
 			possDelay+=1;
 		}
 	}
@@ -31,25 +44,28 @@ public class Possessible : MonoBehaviour {
 	}
 
 	public void possess(){
-		if (possessable) {
-
-				isPossessed = true;
-			gameObject.GetComponent<CapsuleCollider>().enabled = false;
-			gameObject.GetComponent<Rigidbody>().useGravity = false;
+		if (possessable && !player.GetComponent<GhostScript>().poss) {
+			player.GetComponent<GhostScript>().poss = true;
+			player.gameObject.GetComponent<CapsuleCollider>().enabled = false;
+			player.gameObject.GetComponent<Rigidbody>().useGravity = false;
 			transform.position = player.transform.position; 
-			this.transform.SetParent (player.transform);
-			player.GetComponent<MeshRenderer> ().enabled = false;
+			player.transform.SetParent (this.transform);
+			player.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = false;
+			isPossessed = true;
+
+			Debug.Log("Possessed");
 		}
 	}
 
 	public void dePossess(){
 		if (possDelay > 10) {
-			player.GetComponent<MeshRenderer> ().enabled = true;
+			player.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = true;
 			isPossessed = false;
-			this.transform.SetParent (null);
+			player.transform.SetParent (null);
 			transform.Translate (new Vector3 (1, 0, 1));
-			gameObject.GetComponent<CapsuleCollider> ().enabled = true;
-			gameObject.GetComponent<Rigidbody> ().useGravity = true;
+			player.gameObject.GetComponent<CapsuleCollider> ().enabled = true;
+			player.gameObject.GetComponent<Rigidbody> ().useGravity = true;
+			player.GetComponent<GhostScript>().poss = false;
 			possDelay = 0;
 		}
 	}

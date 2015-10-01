@@ -11,16 +11,16 @@ public class tempController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetAxisRaw("Horizontal") != 0){
+		if(!poss && Input.GetAxisRaw("Horizontal") != 0){
 			gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(Input.GetAxisRaw("Horizontal")*30,0,0));
 		} 
-		if(Input.GetAxisRaw("Vertical") != 0){
+		if(!poss && Input.GetAxisRaw("Vertical") != 0){
 			gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0,0,Input.GetAxisRaw("Vertical")*30));
 		}
 
-		if (Input.GetKey ("p")) {
+		if (Input.GetKey (KeyCode.Space)) {
 
-
+			Debug.Log ("trying to possess");
 			possess ();
 		}
 
@@ -42,6 +42,7 @@ public class tempController : MonoBehaviour {
 		
 			poss = !poss;
 		} else if (!poss && npc) {
+			Debug.Log("ask NPC to possess");
 			npc.GetComponent<Possessible> ().possess ();
 
 			poss = !poss;
