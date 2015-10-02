@@ -26,9 +26,11 @@ public class Possessible : MonoBehaviour {
 				anim.SetInteger ("AnimState", 0);
 			}
 			if (Input.GetAxisRaw ("Horizontal") != 0) {
-				transform.Rotate (0, Input.GetAxisRaw ("Horizontal")*80.0f * Time.deltaTime, 0, Space.World);
+				transform.Rotate (0, Input.GetAxisRaw ("Horizontal") * 80.0f * Time.deltaTime, 0, Space.World);
 			}
-			possDelay+=1;
+			possDelay += 1;
+		} else {
+			anim.SetInteger ("AnimState", 0);
 		}
 	}
 
