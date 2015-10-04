@@ -9,16 +9,22 @@ public class GameManager : MonoBehaviour {
 	public Text timerUI;
 	public Image blinkUI;
 	public MODE mode;
-	public float currentPosTime;
-
+	private float currentPosTime;
+	public float posessionTime;
+	public float outOfBodyTime;
+	public GameObject player;
+	GhostScript ghost;
 	private float timer;
 	private bool blinkRecover;
 	public float flashSpeed;
 	private float blinkTimer;
 	private float resetTimer;
+	bool wasPossessing;
 	// Use this for initialization
 	void Start () {
-		
+		ghost = player.GetComponent<GhostScript> ();
+		wasPossessing = false;
+		currentPosTime = outOfBodyTime;
 	}
 	
 	// Update is called once per frame
@@ -29,7 +35,13 @@ public class GameManager : MonoBehaviour {
 		else if(Input.GetKeyDown(KeyCode.Alpha2)){
 			mode = MODE.image;
 		}
-
+		if (!wasPossessing && ghost.poss) {
+			wasPossessing = ghost.poss;
+			currentPosTime = posessionTime;
+		} else if (wasPossessing && !ghost.poss) {
+			wasPossessing = ghost.poss;
+			currentPosTime = outOfBodyTime;
+		}
 		if(currentPosTime > 0){
 			resetTimer = 0;
 
@@ -63,11 +75,16 @@ public class GameManager : MonoBehaviour {
 		Debug.Log ("Resetting");
 		timerUI.text = "Time: 0";
 		resetTimer += flashSpeed * Time.deltaTime;
-		blinkUI.color = Color.Lerp(Color.red, Color.clear, resetTimer);
+		blinkUI.color = Color.Lerp( new Vector4(1,1,1,.5f), Color.clear, resetTimer);
+		if (ghost.poss) {
+			ghost.npc.GetComponent<Possessible> ().dePossess ();
+		} else {
+			Application.LoadLevel ("room_for_wake");
+		}
 	}
 
 	void Blink(){
-		blinkUI.color = Color.red;
+		blinkUI.color = new Vector4(1,1,1,.5f);
 		blinkRecover = true;
 		blinkTimer = 0;
 	}
@@ -75,7 +92,7 @@ public class GameManager : MonoBehaviour {
 	void EndBlink(){
 		blinkTimer += Time.deltaTime;
 		flashSpeed = 3f - currentPosTime / 10f;
-		blinkUI.color = Color.Lerp(Color.red, Color.clear, flashSpeed * blinkTimer);
+		blinkUI.color = Color.Lerp( new Vector4(1,1,1,.5f), Color.clear, flashSpeed * blinkTimer);
 		if(blinkUI.color == Color.clear){
 			blinkRecover = false;
 		}
