@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour {
 		ghost = player.GetComponent<GhostScript> ();
 		wasPossessing = false;
 		currentPosTime = outOfBodyTime;
+		blinkTimer = 0;
 	}
 	
 	// Update is called once per frame
@@ -38,9 +39,11 @@ public class GameManager : MonoBehaviour {
 		if (!wasPossessing && ghost.poss) {
 			wasPossessing = ghost.poss;
 			currentPosTime = posessionTime;
+			blinkTimer = 0;
 		} else if (wasPossessing && !ghost.poss) {
 			wasPossessing = ghost.poss;
 			currentPosTime = outOfBodyTime;
+			blinkTimer = 0;
 		}
 		if(currentPosTime > 0){
 			resetTimer = 0;
@@ -52,30 +55,21 @@ public class GameManager : MonoBehaviour {
 				timerUI.text = "Time: " + currentPosTime;
 			}
 			else if(mode == MODE.image){
-				timerUI.enabled = false;
-				blinkUI.enabled = true;
-				if(!blinkRecover){
-					Blink();
-				}
-				else{
-					EndBlink();
-				}
-
+				timerUI.text = "";
+				blinkUI.color = new Vector4(1,1,1, Mathf.Min(.7f,((blinkTimer*.5f) / currentPosTime)*.2f));
 			}
 		}
 		else{
 			Reset();
 		}
 
-
+		blinkTimer += Time.deltaTime;
 
 	}
 
 	void Reset(){
 		Debug.Log ("Resetting");
 		timerUI.text = "Time: 0";
-		resetTimer += flashSpeed * Time.deltaTime;
-		blinkUI.color = Color.Lerp( new Vector4(1,1,1,.5f), Color.clear, resetTimer);
 		if (ghost.poss) {
 			ghost.npc.GetComponent<Possessible> ().dePossess ();
 		} else {
