@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
 	public enum MODE{text, image};
-
+	GameObject[] furniture;
 	public Text timerUI;
 	public Image blinkUI;
 	public MODE mode;
@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour {
 		wasPossessing = false;
 		currentPosTime = outOfBodyTime;
 		blinkTimer = 0;
+		furniture = GameObject.FindGameObjectsWithTag ("Chair");
+		disablePhysics ();
 	}
 	
 	// Update is called once per frame
@@ -40,10 +42,12 @@ public class GameManager : MonoBehaviour {
 			wasPossessing = ghost.poss;
 			currentPosTime = posessionTime;
 			blinkTimer = 0;
+			activatePhysics();
 		} else if (wasPossessing && !ghost.poss) {
 			wasPossessing = ghost.poss;
 			currentPosTime = outOfBodyTime;
 			blinkTimer = 0;
+			disablePhysics();
 		}
 		if(currentPosTime > 0){
 			resetTimer = 0;
@@ -74,6 +78,19 @@ public class GameManager : MonoBehaviour {
 			ghost.npc.GetComponent<Possessible> ().dePossess ();
 		} else {
 			Application.LoadLevel ("room_for_wake");
+		}
+	}
+	void activatePhysics(){
+		foreach (GameObject chair in furniture) {
+			chair.GetComponent<Rigidbody> ().isKinematic = false;
+			chair.GetComponent<Collider> ().enabled = true;
+		}
+	}
+
+	void disablePhysics(){
+		foreach (GameObject chair in furniture) {
+			chair.GetComponent<Rigidbody> ().isKinematic = true;
+			chair.GetComponent<Collider> ().enabled = false;
 		}
 	}
 

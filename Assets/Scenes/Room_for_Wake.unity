@@ -196,6 +196,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -203,6 +207,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 105608109}
+--- !u!1 &105608111 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 105608109}
+--- !u!54 &105608112
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105608111}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &105608113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105608111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1 &191993881
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +458,10 @@ Prefab:
       propertyPath: m_Name
       value: chair3(left)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -430,6 +469,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 305891798}
+--- !u!1 &305891800 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 305891798}
+--- !u!54 &305891801
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 305891800}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &305891802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 305891800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .041514542, z: .464928746}
 --- !u!1001 &318605647
 Prefab:
   m_ObjectHideFlags: 0
@@ -481,6 +551,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -488,6 +562,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 318605647}
+--- !u!1 &318605649 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 318605647}
+--- !u!54 &318605650
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318605649}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &318605651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318605649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415143035, z: .464928716}
 --- !u!1001 &342925560
 Prefab:
   m_ObjectHideFlags: 0
@@ -985,6 +1090,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -992,6 +1101,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 490902013}
+--- !u!1 &490902015 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 490902013}
+--- !u!54 &490902016
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 490902015}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &490902017
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 490902015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928746}
 --- !u!1001 &495306813
 Prefab:
   m_ObjectHideFlags: 0
@@ -1113,6 +1253,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -1120,6 +1264,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 532654452}
+--- !u!1 &532654454 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 532654452}
+--- !u!54 &532654455
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 532654454}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &532654456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 532654454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1 &588175766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,6 +1613,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -1445,6 +1624,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 835686264}
+--- !u!1 &835686266 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 835686264}
+--- !u!54 &835686267
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835686266}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &835686268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835686266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415143035, z: .464928746}
 --- !u!1 &862952082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +1738,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -1535,6 +1749,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 887430805}
+--- !u!1 &887430807 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 887430805}
+--- !u!54 &887430808
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887430807}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &887430809
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887430807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1001 &910848262
 Prefab:
   m_ObjectHideFlags: 0
@@ -1804,6 +2049,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -1811,6 +2060,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1080503580}
+--- !u!1 &1080503582 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1080503580}
+--- !u!54 &1080503583
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080503582}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1080503584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080503582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415143035, z: .464928746}
 --- !u!1 &1081400981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,6 +2650,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -2377,6 +2661,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1287201055}
+--- !u!1 &1287201057 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1287201055}
+--- !u!54 &1287201058
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1287201057}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1287201059
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1287201057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1001 &1358185348
 Prefab:
   m_ObjectHideFlags: 0
@@ -2428,6 +2743,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -2435,6 +2754,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1358185348}
+--- !u!1 &1358185350 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1358185348}
+--- !u!54 &1358185351
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358185350}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1358185352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358185350}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1001 &1393204850
 Prefab:
   m_ObjectHideFlags: 0
@@ -2776,6 +3126,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -2783,6 +3137,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1504767030}
+--- !u!1 &1504767032 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1504767030}
+--- !u!54 &1504767033
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1504767032}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1504767034
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1504767032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1001 &1511381921
 Prefab:
   m_ObjectHideFlags: 0
@@ -3012,6 +3397,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3019,6 +3408,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1602517384}
+--- !u!1 &1602517386 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1602517384}
+--- !u!54 &1602517387
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1602517386}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1602517388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1602517386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415143035, z: .464928716}
 --- !u!1001 &1635185636
 Prefab:
   m_ObjectHideFlags: 0
@@ -3070,6 +3490,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3077,6 +3501,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1635185636}
+--- !u!1 &1635185638 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1635185636}
+--- !u!54 &1635185639
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635185638}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1635185640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635185638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928746}
 --- !u!1001 &1681149866
 Prefab:
   m_ObjectHideFlags: 0
@@ -3128,6 +3583,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3135,6 +3594,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1681149866}
+--- !u!1 &1681149868 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1681149866}
+--- !u!54 &1681149869
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1681149868}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1681149870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1681149868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415143035, z: .464928716}
 --- !u!1001 &1687893982
 Prefab:
   m_ObjectHideFlags: 0
@@ -3228,6 +3718,10 @@ Prefab:
       propertyPath: m_Name
       value: chair1(left)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3235,6 +3729,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1702160379}
+--- !u!1 &1702160381 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1702160379}
+--- !u!54 &1702160382
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702160381}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1702160383
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702160381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .041514542, z: .464928716}
 --- !u!1001 &1717594834
 Prefab:
   m_ObjectHideFlags: 0
@@ -3332,6 +3857,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3339,6 +3868,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1742926685}
+--- !u!1 &1742926687 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1742926685}
+--- !u!54 &1742926688
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742926687}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1742926689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742926687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .041514542, z: .464928716}
 --- !u!1 &1794644021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,6 +4014,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3461,6 +4025,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1833221196}
+--- !u!1 &1833221198 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1833221196}
+--- !u!54 &1833221199
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1833221198}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1833221200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1833221198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928746}
 --- !u!1001 &1862618713
 Prefab:
   m_ObjectHideFlags: 0
@@ -3512,6 +4107,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3519,6 +4118,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1862618713}
+--- !u!1 &1862618715 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1862618713}
+--- !u!54 &1862618716
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1862618715}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1862618717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1862618715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1001 &1876845723
 Prefab:
   m_ObjectHideFlags: 0
@@ -3570,6 +4200,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3577,6 +4211,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1876845723}
+--- !u!1 &1876845725 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1876845723}
+--- !u!54 &1876845726
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1876845725}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1876845727
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1876845725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .041514542, z: .464928746}
 --- !u!1001 &1897630303
 Prefab:
   m_ObjectHideFlags: 0
@@ -3686,6 +4351,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3693,6 +4362,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1908999879}
+--- !u!1 &1908999881 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1908999879}
+--- !u!54 &1908999882
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1908999881}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1908999883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1908999881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1001 &1962762296
 Prefab:
   m_ObjectHideFlags: 0
@@ -3744,6 +4444,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3751,12 +4455,58 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 1962762296}
+--- !u!1 &1962762298 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 1962762296}
+--- !u!54 &1962762299
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962762298}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1962762300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962762298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415147804, z: .464928716}
 --- !u!1 &1995800179 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 2047362814}
---- !u!64 &1995800180
-MeshCollider:
+--- !u!54 &1995800181
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995800179}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1995800182
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -3765,8 +4515,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: 2186b8522b6fd4f3a91076b0b83cfe14, type: 3}
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .041514542, z: .464928746}
 --- !u!1001 &2018474615
 Prefab:
   m_ObjectHideFlags: 0
@@ -3810,6 +4560,10 @@ Prefab:
       propertyPath: m_Name
       value: chair2(left)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3817,6 +4571,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 2018474615}
+--- !u!1 &2018474617 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 2018474615}
+--- !u!54 &2018474618
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2018474617}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2018474619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2018474617}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .041514542, z: .464928716}
 --- !u!1 &2019814869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3899,6 +4684,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_IsPrefabParent: 0
@@ -3906,6 +4695,37 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
   m_PrefabInternal: {fileID: 2040652753}
+--- !u!1 &2040652755 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+  m_PrefabInternal: {fileID: 2040652753}
+--- !u!54 &2040652756
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2040652755}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2040652757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2040652755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .448312521, y: .535194278, z: .929857433}
+  m_Center: {x: -2.80588865e-05, y: .0415143035, z: .464928746}
 --- !u!1001 &2047362814
 Prefab:
   m_ObjectHideFlags: 0
@@ -3956,6 +4776,10 @@ Prefab:
     - target: {fileID: 400000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
+      propertyPath: m_TagString
+      value: Chair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d807149b292344d0a5c6792f863df64, type: 2}
