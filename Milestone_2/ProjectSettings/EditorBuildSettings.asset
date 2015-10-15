@@ -7,3 +7,5 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Room_for_Wake.unity
+  - enabled: 1
+    path: Assets/Scenes/gstache_forest.unity

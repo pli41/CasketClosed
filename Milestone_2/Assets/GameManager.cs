@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
 	public float posessionTime;
 	public float outOfBodyTime;
 	public GameObject player;
+    public string[] scenes = new string[5];
 	GhostScript ghost;
 	private float timer;
 	private bool blinkRecover;
@@ -38,6 +39,31 @@ public class GameManager : MonoBehaviour {
 		else if(Input.GetKeyDown(KeyCode.Alpha2)){
 			mode = MODE.image;
 		}
+        if(Input.GetKey("1") || Input.GetKey("2") || Input.GetKey("3") || Input.GetKey("4") || Input.GetKey("5"))
+        {
+            string scene = "";
+            if (Input.GetKey("1"))
+            {
+                 scene = scenes[0];
+            }
+            if (Input.GetKey("2"))
+            {
+                scene = scenes[1];
+            }
+            if (Input.GetKey("3"))
+            {
+                scene = scenes[2];
+            }
+            if (Input.GetKey("4"))
+            {
+                scene = scenes[3];
+            }
+            if (Input.GetKey("5"))
+            {
+                scene = scenes[6];
+            }
+            Application.LoadLevel(scene);
+        }
 		if (!wasPossessing && ghost.poss) {
 			wasPossessing = ghost.poss;
 			currentPosTime = posessionTime;

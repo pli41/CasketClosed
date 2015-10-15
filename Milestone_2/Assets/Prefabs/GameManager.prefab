@@ -41,10 +41,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerUI: {fileID: 0}
   blinkUI: {fileID: 0}
-  mode: 1
-  posessionTime: 15
-  outOfBodyTime: 10
+  mode: 0
+  posessionTime: 120
+  outOfBodyTime: 120
   player: {fileID: 0}
+  scenes:
+  - Room_for_Wake
+  - gstache_forest
+  - 
+  - 
+  - 
   flashSpeed: .300000012
 --- !u!1001 &100100000
 Prefab:

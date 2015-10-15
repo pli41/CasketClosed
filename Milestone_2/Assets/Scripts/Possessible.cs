@@ -50,7 +50,7 @@ public class Possessible : MonoBehaviour {
             } else {
                 anim.SetFloat("speed", 0);
             }
-            GetComponent<CapsuleCollider>().radius = radius + (GetComponent<Rigidbody>().velocity.magnitude/20) * anim.GetInteger("AnimState");
+            GetComponent<CapsuleCollider>().radius = radius + anim.GetInteger("AnimState") / 2 + Mathf.Round(anim.GetFloat("speed"))/2;
             possDelay += 1;
 		} else {
 			anim.SetInteger ("AnimState", 0);
