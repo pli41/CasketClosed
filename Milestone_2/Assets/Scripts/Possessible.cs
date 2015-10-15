@@ -8,6 +8,7 @@ public class Possessible : MonoBehaviour {
 	int possDelay;
 	Animator anim;
 	public Component[] boneRig;
+    Component[] colliders;
 	public int ReviveTime;
 	int time;
 	// Use this for initialization
@@ -16,11 +17,15 @@ public class Possessible : MonoBehaviour {
 		possessable = false;
 		anim = GetComponent<Animator> ();
 		boneRig = gameObject.GetComponentsInChildren <Rigidbody>();
+        colliders = gameObject.GetComponentsInChildren<Collider>();
+       
+        Revive();
 	}
 
 	void Update () { 
 		if (isPossessed) {
-			player.transform.position = transform.position;
+           
+            player.transform.position = transform.position;
 			player.transform.rotation = transform.rotation;
 			if (Input.GetAxisRaw ("Vertical") > 0) {
 				anim.SetInteger ("AnimState", 1);
@@ -35,6 +40,7 @@ public class Possessible : MonoBehaviour {
 			possDelay += 1;
 		} else {
 			anim.SetInteger ("AnimState", 0);
+            
 		}
 	
 	}
@@ -54,7 +60,6 @@ public class Possessible : MonoBehaviour {
 	public void possess(){
 
 		if (possessable && !player.GetComponent<GhostScript>().poss) {
-
 			player.gameObject.GetComponent<CapsuleCollider>().enabled = false;
 			player.gameObject.GetComponent<Rigidbody>().useGravity = false;
 			transform.position = player.transform.position; 
@@ -67,7 +72,8 @@ public class Possessible : MonoBehaviour {
 	}
 
 	public void dePossess(){
-		if (possDelay > 10) {
+        
+        if (possDelay > 10) {
 			Kill ();
 			player.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = true;
 			isPossessed = false;
@@ -83,19 +89,35 @@ public class Possessible : MonoBehaviour {
 	}
 
 	public void Kill(){
-		foreach (Rigidbody ragbone in boneRig) {
-			ragbone.isKinematic = false;
+		for (int i = 0; i < boneRig.Length; i++) {
+            Rigidbody ragbone = (Rigidbody)boneRig[i];
+            Collider coll = (Collider)colliders[i];
+            ragbone.isKinematic = false;
+            ragbone.useGravity = true;
+            coll.enabled = true;
+            
 		}
 		GetComponent<Animator> ().enabled = false;
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<CapsuleCollider>().enabled = false;
 		time = 0;
 	}
 
 	void Revive(){
-		foreach (Rigidbody ragbone in boneRig) {
-			ragbone.isKinematic = true;
-		}
-		GetComponent<Animator> ().enabled = true;
+        for (int i = 0; i < boneRig.Length; i++)
+        {
+            Rigidbody ragbone = (Rigidbody)boneRig[i];
+            Collider coll = (Collider)colliders[i];
+            ragbone.useGravity = false;
+            //ragbone.isKinematic = true;
+            coll.enabled = false;
+        }
+        GetComponent<Animator> ().enabled = true;
 		possessable = true;
-	}
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<CapsuleCollider>().enabled = true;
+        GetComponent<BoxCollider>().enabled = true;
+
+    }
 
 }
