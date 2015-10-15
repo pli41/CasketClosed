@@ -10,6 +10,7 @@ public class Possessible : MonoBehaviour {
 	public Component[] boneRig;
     Component[] colliders;
 	public int ReviveTime;
+    float radius;
 	int time;
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,7 @@ public class Possessible : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		boneRig = gameObject.GetComponentsInChildren <Rigidbody>();
         colliders = gameObject.GetComponentsInChildren<Collider>();
-       
+        radius = GetComponent<CapsuleCollider>().radius;
         Revive();
 	}
 
@@ -36,13 +37,26 @@ public class Possessible : MonoBehaviour {
 			}
 			if (Input.GetAxisRaw ("Horizontal") != 0) {
 				transform.Rotate (0, Input.GetAxisRaw ("Horizontal") * 80.0f * Time.deltaTime, 0, Space.World);
+
 			}
-			possDelay += 1;
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                if(anim.GetFloat("speed") < 1)
+                {
+                    float speed = anim.GetFloat("speed");
+                    speed += .1f;
+                    anim.SetFloat("speed", speed);
+                }
+            } else {
+                anim.SetFloat("speed", 0);
+            }
+            GetComponent<CapsuleCollider>().radius = radius + (GetComponent<Rigidbody>().velocity.magnitude/20) * anim.GetInteger("AnimState");
+            possDelay += 1;
 		} else {
 			anim.SetInteger ("AnimState", 0);
             
 		}
-	
+       
 	}
 
 	void OnTriggerEnter(Collider target){
