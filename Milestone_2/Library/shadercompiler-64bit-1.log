@@ -1,9 +1,8 @@
 Base path: /Applications/Unity.app/Contents
 Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-1945133824
 Cmd: getPlatforms
-Cmd: preprocess
-  insize=4159 outsize=1016 ok=1
 Cmd: compileSnippet
+<<<<<<< HEAD
   api=0 type=0 insize=3447 outsize=2127 kw=WATER_REFRACTIVE ok=1
 Cmd: compileSnippet
   api=0 type=1 insize=3447 outsize=6 kw=WATER_REFRACTIVE ok=1
@@ -7731,3 +7730,10 @@ Cmd: compileSnippet
   api=0 type=1 insize=1032 outsize=6 kw= ok=1
 Cmd: compileSnippet
   api=4 type=1 insize=1032 outsize=1526 kw= ok=1
+=======
+  api=0 type=0 insize=982 outsize=11377 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON pd= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=982 outsize=12856 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _NORMALMAP pd= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=6924 outsize=3536 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON pd= ok=1
+>>>>>>> 9e5867c33b6f462c26a386c17eed37610e72f81e
