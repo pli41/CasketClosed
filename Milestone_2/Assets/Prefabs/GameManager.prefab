@@ -49,7 +49,7 @@ MonoBehaviour:
   - Room_for_Wake
   - gstache_forest
   - sasha_Dungeon
-  - 
+  - charvi_snow
   - 
   flashSpeed: .300000012
 --- !u!1001 &100100000
@@ -62,6 +62,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: scenes.Array.data[2]
       value: sasha_Dungeon
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenes.Array.data[3]
+      value: charvi_snow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
