@@ -169,9 +169,9 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "MuscleClip 'WalkFWD' conversion warning: Bone length
-      is different in avatar and animation\n\n     'LeftLeg' : position error = 7.696520
-      mm\n\n     'LeftFoot' : position error = 15.233778 mm\n\n"
+    animationImportWarnings: "\nDefault bone length found in this file is different
+      form the one found in the source avatar:\n\t'LeftLeg' : position error = 7.696520
+      mm\n\t'LeftFoot' : position error = 15.233778 mm\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 1
@@ -203,23 +203,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: .387205362
-        functionName: Play()
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c1f64e74c75d5344aa17c2e2c1dbfe3d,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: .83164978
-        functionName: Play()
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c1f64e74c75d5344aa17c2e2c1dbfe3d,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
