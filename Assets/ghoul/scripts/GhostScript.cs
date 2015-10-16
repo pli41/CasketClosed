@@ -17,6 +17,8 @@ public class GhostScript : MonoBehaviour
 	private AnimatorStateInfo currentBaseState;		
 	private CapsuleCollider col;			
 
+
+
 	static int idleState = Animator.StringToHash("Base Layer.Idle");	
 	static int locoState = Animator.StringToHash("Base Layer.Locomotion");		
 	static int possessState = Animator.StringToHash("Base Layer.Possess");			
@@ -28,7 +30,8 @@ public class GhostScript : MonoBehaviour
 		col = GetComponent<CapsuleCollider>();				
 
 	}
-	
+
+
 	void FixedUpdate ()
 	{
 		if (!poss) {
@@ -59,7 +62,8 @@ public class GhostScript : MonoBehaviour
 	void OnTriggerEnter(Collider target){
 		if (target.tag.Equals ("NPC") && !poss) {
 			npc = target.gameObject;
-		}
+		} 
+
 	}
 	
 	void OnTriggerExit(){

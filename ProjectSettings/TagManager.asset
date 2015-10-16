@@ -7,6 +7,9 @@ TagManager:
   - NPC
   - Door
   - Chair
+  - Crate
+  - Grate
+  - Stairs
   layers:
   - Default
   - TransparentFX
