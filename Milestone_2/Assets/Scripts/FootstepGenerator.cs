@@ -17,12 +17,11 @@ public class FootstepGenerator : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider coll)
-    {
-        if(coll.tag.Equals("1") || coll.tag.Equals("2") || coll.tag.Equals("3") 
-            || coll.tag.Equals("0"))
-        {
-
-            source.clip = clips[Int32.Parse(coll.tag)];
+    {	
+		int tag;
+		if (int.TryParse(coll.tag, out tag) && tag >= 0 && tag < clips.Length) {
+            source.clip = clips[tag];
+			Play ();
         }
     }
 
