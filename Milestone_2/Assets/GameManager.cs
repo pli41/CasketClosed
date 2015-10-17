@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
 		else if(Input.GetKeyDown(KeyCode.Alpha2)){
 			mode = MODE.image;
 		}
-        if(Input.GetKey("1") || Input.GetKey("2") || Input.GetKey("3") || Input.GetKey("4") || Input.GetKey("5"))
+		if(Input.GetKey("1") || Input.GetKey("2") || Input.GetKey("3") || Input.GetKey("4") || Input.GetKey("5") || Input.GetKey("6"))
         {
             if (Input.GetKey("1"))
             {
@@ -62,8 +62,12 @@ public class GameManager : MonoBehaviour {
             }
             if (Input.GetKey("5"))
             {
-                scene = scenes[6];
+                scene = scenes[4];
             }
+			if (Input.GetKey("6"))
+			{
+				scene = scenes[5];
+			}
             Application.LoadLevel(scene);
         }
 		if (!wasPossessing && ghost.poss) {

@@ -4,7 +4,21 @@ timeCreated: 1444778479
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: ambientLight1
+    100002: Cottage_House
+    100004: directionalLight1
+    100006: //RootNode
+    100008: Snow_Covered_Cottage
+    400000: ambientLight1
+    400002: Cottage_House
+    400004: directionalLight1
+    400006: //RootNode
+    400008: Snow_Covered_Cottage
+    2300000: Cottage_House
+    3300000: Cottage_House
+    4300000: Cottage_House
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

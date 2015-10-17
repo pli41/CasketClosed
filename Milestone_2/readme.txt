@@ -25,3 +25,29 @@ Press arrow keys to walk forward, back left and right in the snow. The player is
 
 While running the game, open the “Room_for_Wake” scene first and press other number keys to go to other scenes.
 
+- - - - - - - - - - - - - - - - - - - - - - - -
+Name: Peilin Li
+Prism account: pli41
+E-mail: lipeilin@gatech.edu
+
+Theme/Biome: Medieval
+Keypress for scene: 6
+
+Instruction: Press WASD to move; press space for possessing or unpossessing.
+Requirements: 
+(1) 5 unique actors including: Trampoline(the carpet), Barrel, welcome sign, desk, wardrobe.
+(2) Compound objects: welcome sign, door
+(3) terrain and a slope for jumping into room from outside.
+(4) 3 walking SFXs: wooden floor, grass and mud
+(5) All medieval styled, rain particle effect and sound and ghost shader 
+
+Resources:
+(1)10 Low-poly medieval models: https://www.assetstore.unity3d.com/en/#!/content/30639
+(2)Elementals: https://www.assetstore.unity3d.com/en/#!/content/11158
+(3)Free MatCap Shaders: https://www.assetstore.unity3d.com/en/#!/content/8221
+(4)All SFXs are taken from freesound.org.
+
+Special Notice:
+(1) Trampoline can only be triggered when main character is in physical mode.
+
+While running the game, open the “Room_for_Wake” scene first and press other number keys to go to other scenes.

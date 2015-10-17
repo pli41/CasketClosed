@@ -132,7 +132,6 @@ Camera:
   m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -144,8 +143,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9257445}
-  m_LocalRotation: {x: -.0513616689, y: .813363075, z: .0726645067, w: .57491082}
-  m_LocalPosition: {x: 49.4356003, y: -14.7053385, z: 452.582184}
+  m_LocalRotation: {x: -.187421411, y: .718944728, z: .212275028, w: .634768546}
+  m_LocalPosition: {x: -308.139282, y: -289.129242, z: 476.688293}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1933,7 +1932,6 @@ Camera:
   m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -2261,7 +2259,6 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -5057,6 +5054,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: scenes.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 470566, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 276
@@ -5101,6 +5102,14 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1462332089}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: scenes.Array.data[5]
+      value: Peilin_Medieval
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: scenes.Array.data[4]
+      value: sasha_Dungeon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
   m_IsPrefabParent: 0
@@ -5260,7 +5269,6 @@ Camera:
   m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10

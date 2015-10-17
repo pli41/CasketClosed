@@ -3053,7 +3053,6 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -3747,6 +3746,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: scenes.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 470566, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 276
@@ -3791,6 +3794,14 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1462332089}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: scenes.Array.data[5]
+      value: Peilin_Medieval
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: scenes.Array.data[4]
+      value: sasha_Dungeon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
   m_IsPrefabParent: 0

@@ -15,3 +15,5 @@ EditorBuildSettings:
     path: Assets/Scenes/sasha_Dungeon.unity
   - enabled: 1
     path: Assets/Scenes/tzhang_desert.unity
+  - enabled: 1
+    path: Assets/Scenes/Peilin_Medieval.unity
