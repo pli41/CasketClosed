@@ -48,7 +48,11 @@ MonoBehaviour:
   scenes:
   - Room_for_Wake
   - gstache_forest
+<<<<<<< HEAD
   - tzhang_desert
+=======
+  - sasha_Dungeon
+>>>>>>> 4c26e77497857589057af168969a01ea4f22f216
   - 
   - 
   flashSpeed: .300000012
@@ -58,7 +62,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: scenes.Array.data[2]
+      value: sasha_Dungeon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189292}
