@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour {
 	public float flashSpeed;
 	private float blinkTimer;
 	private float resetTimer;
+	private string scene;
 	bool wasPossessing;
 	// Use this for initialization
 	void Start () {
@@ -29,6 +30,8 @@ public class GameManager : MonoBehaviour {
 		blinkTimer = 0;
 		furniture = GameObject.FindGameObjectsWithTag ("Chair");
 		disablePhysics ();
+
+		scene = scenes [0];
 	}
 	
 	// Update is called once per frame
@@ -41,7 +44,6 @@ public class GameManager : MonoBehaviour {
 		}
         if(Input.GetKey("1") || Input.GetKey("2") || Input.GetKey("3") || Input.GetKey("4") || Input.GetKey("5"))
         {
-            string scene = "";
             if (Input.GetKey("1"))
             {
                  scene = scenes[0];
@@ -94,7 +96,6 @@ public class GameManager : MonoBehaviour {
 		}
 
 		blinkTimer += Time.deltaTime;
-
 	}
 
 	void Reset(){
@@ -103,7 +104,7 @@ public class GameManager : MonoBehaviour {
 		if (ghost.poss) {
 			ghost.npc.GetComponent<Possessible> ().dePossess ();
 		} else {
-			Application.LoadLevel ("room_for_wake");
+			Application.LoadLevel (scene);
 		}
 	}
 	void activatePhysics(){
