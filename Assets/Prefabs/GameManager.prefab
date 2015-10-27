@@ -41,11 +41,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerUI: {fileID: 0}
   blinkUI: {fileID: 0}
-  mode: 1
+  mode: 0
   posessionTime: 15
-  outOfBodyTime: 10
+  outOfBodyTime: 40
   player: {fileID: 0}
-  flashSpeed: .300000012
+  scenes:
+  - Room_For_Wake
+  - gstache_forest
+  - tzhang_desert
+  - charvi_snow
+  - 
+  flashSpeed: .100000001
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
