@@ -16,7 +16,8 @@ public class Possessible : MonoBehaviour {
 		possessable = false;
 		anim = GetComponent<Animator> ();
 		boneRig = gameObject.GetComponentsInChildren <Rigidbody>();
-	}
+   
+    }
 
 	void Update () { 
 		if (isPossessed) {
@@ -62,18 +63,20 @@ public class Possessible : MonoBehaviour {
 			player.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = false;
 			isPossessed = true;
 			player.GetComponent<GhostScript>().poss = true;
-
+            gameObject.GetComponent<CapsuleCollider>().enabled = true;
 		}
 	}
 
 	public void dePossess(){
 		if (possDelay > 10) {
-			Kill ();
+            gameObject.GetComponent<CapsuleCollider>().enabled = true;
+            Kill ();
 			player.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = true;
+
 			isPossessed = false;
 
-
-			player.GetComponent<GhostScript>().poss = false;
+            
+            player.GetComponent<GhostScript>().poss = false;
 			possDelay = 0;
 
 			player.gameObject.GetComponent<CapsuleCollider> ().enabled = true;

@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
 		currentPosTime = outOfBodyTime;
 		blinkTimer = 0;
 		furniture = GameObject.FindGameObjectsWithTag ("Chair");
-		disablePhysics ();
+		//disablePhysics ();
 	}
 	
 	// Update is called once per frame
