@@ -8,6 +8,7 @@ public class Possessible : MonoBehaviour {
 	int possDelay;
 	Animator anim;
 	public Component[] boneRig;
+    Collider[] colliders;
 	public int ReviveTime;
 	int time;
 	// Use this for initialization
@@ -16,7 +17,8 @@ public class Possessible : MonoBehaviour {
 		possessable = false;
 		anim = GetComponent<Animator> ();
 		boneRig = gameObject.GetComponentsInChildren <Rigidbody>();
-   
+        colliders = gameObject.GetComponentsInChildren<Collider>();
+        Revive();
     }
 
 	void Update () { 
@@ -69,7 +71,7 @@ public class Possessible : MonoBehaviour {
 
 	public void dePossess(){
 		if (possDelay > 10) {
-            gameObject.GetComponent<CapsuleCollider>().enabled = true;
+      
             Kill ();
 			player.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = true;
 
@@ -89,12 +91,22 @@ public class Possessible : MonoBehaviour {
 		foreach (Rigidbody ragbone in boneRig) {
 			ragbone.isKinematic = false;
 		}
+        foreach(Collider coll in colliders)
+        {
+            coll.enabled = true;
+        }
+        GetComponent<CapsuleCollider>().enabled = false;
 		GetComponent<Animator> ().enabled = false;
 		time = 0;
 	}
 
 	void Revive(){
-		foreach (Rigidbody ragbone in boneRig) {
+        foreach (Collider coll in colliders)
+        {
+            coll.enabled = false;
+        }
+        GetComponent<CapsuleCollider>().enabled = true;
+        foreach (Rigidbody ragbone in boneRig) {
 			ragbone.isKinematic = true;
 		}
 		GetComponent<Animator> ().enabled = true;
