@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   - 4: {fileID: 491348}
   - 54: {fileID: 5420410}
   - 65: {fileID: 6567332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - 54: {fileID: 5457422}
   - 144: {fileID: 14421870}
   - 136: {fileID: 13635014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upper_arm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 54: {fileID: 5449320}
   - 144: {fileID: 14418108}
   - 136: {fileID: 13634422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shin.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: thumb.02.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: eye.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 485698}
   - 137: {fileID: 13717352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pythonMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: thumb.03.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: thumb.03.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - 54: {fileID: 5466702}
   - 144: {fileID: 14477072}
   - 136: {fileID: 13622800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upper_arm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,8 +185,24 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: clavicle.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &124926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 412588}
+  - 114: {fileID: 11453634}
+  m_Layer: 8
+  m_Name: AI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +219,7 @@ GameObject:
   - 54: {fileID: 5439208}
   - 144: {fileID: 14479322}
   - 135: {fileID: 13569342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +234,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +252,7 @@ GameObject:
   - 54: {fileID: 5432818}
   - 144: {fileID: 14412998}
   - 136: {fileID: 13673776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forearm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +267,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toe.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +285,7 @@ GameObject:
   - 54: {fileID: 5481824}
   - 144: {fileID: 14423766}
   - 136: {fileID: 13634548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: thigh.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +301,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 480152}
   - 137: {fileID: 13754940}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shoes02Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +316,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: f_ring.01.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +334,7 @@ GameObject:
   - 54: {fileID: 5442208}
   - 144: {fileID: 14426028}
   - 136: {fileID: 13652172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shin.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +349,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: clavicle.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +365,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 481490}
   - 137: {fileID: 13773604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jeans01Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +380,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: f_index.01.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +395,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +411,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 474608}
   - 137: {fileID: 13716800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shirt01Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +426,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toe.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +441,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: f_ring.01.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +459,7 @@ GameObject:
   - 54: {fileID: 5469336}
   - 144: {fileID: 14440726}
   - 65: {fileID: 6586252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +474,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 474512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +489,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 424408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: eye.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +504,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: f_index.01.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +520,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 463588}
   - 137: {fileID: 13756872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: high-polyMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +535,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 474030}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: python
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +550,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +565,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413786}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,9 +585,8 @@ GameObject:
   - 114: {fileID: 11482176}
   - 54: {fileID: 5458878}
   - 136: {fileID: 13672418}
-  - 114: {fileID: 11474096}
   - 82: {fileID: 8231394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ragdoll NPC 1
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -589,7 +604,7 @@ GameObject:
   - 54: {fileID: 5420206}
   - 144: {fileID: 14499306}
   - 136: {fileID: 13682788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forearm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +622,7 @@ GameObject:
   - 54: {fileID: 5473576}
   - 144: {fileID: 14480662}
   - 136: {fileID: 13650532}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: thigh.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +637,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: thumb.02.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,6 +672,18 @@ Transform:
   - {fileID: 429790}
   m_Father: {fileID: 499396}
   m_RootOrder: 0
+--- !u!4 &412588
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124926}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 453696}
+  m_RootOrder: 6
 --- !u!4 &413786
 Transform:
   m_ObjectHideFlags: 1
@@ -802,7 +829,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.21226072, y: .219999999, z: -7.21808004}
+  m_LocalPosition: {x: -.899999976, y: .0299999993, z: -2.01699996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463588}
@@ -811,6 +838,7 @@ Transform:
   - {fileID: 485698}
   - {fileID: 474608}
   - {fileID: 480152}
+  - {fileID: 412588}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &453832
@@ -1253,7 +1281,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!54 &5466702
 Rigidbody:
@@ -1438,21 +1466,58 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11474096
+--- !u!114 &11453634
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186822}
+  m_GameObject: {fileID: 124926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f64e74c75d5344aa17c2e2c1dbfe3d, type: 3}
+  m_Script: {fileID: 157053555, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 8300000, guid: 3fd9136c6eabc25479008e511cc59e67, type: 3}
-  - {fileID: 8300000, guid: 02c6a5f36eeb05449a17aacff0505048, type: 3}
-  - {fileID: 8300000, guid: 64b1465e65cdc204b8f8c2d61f67fe81, type: 3}
+  _dataSerializer:
+    _serializedData: <component version="1.3" type="RAIN.Core.AIRig"><fields><field
+      value="OnWhenSelected" type="RAIN.Core.VisualModeEnum" id="_visualMode" /><field
+      value="True" type="System.Boolean" id="_useUnityMessages" /><field value="False"
+      type="System.Boolean" id="_useFixedUpdate" /><field type="RAIN.Core.AI" reference="0"
+      id="_ai" /></fields><references><reference type="RAIN.Core.AI" refcount="1"
+      id="0"><field value="True" type="System.Boolean" id="_isActive" /><field type="UnityEngine.GameObject"
+      id="_body" gameobject="0" /><field type="RAIN.Memory.BasicMemory" reference="1"
+      id="_workingMemory" childrenvisible="False" /><field type="RAIN.Minds.BasicMind"
+      reference="2" id="_mind" childrenvisible="True" /><field type="RAIN.Motion.BasicMotor"
+      reference="3" id="_motor" childrenvisible="False" /><field type="RAIN.Animation.BasicAnimator"
+      reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
+      reference="5" id="_navigator" /><field type="RAIN.Perception.BasicSenses" reference="6"
+      id="_senses" /><field type="System.Collections.Generic.List" id="_customElements"
+      elementtype="RAIN.Core.CustomAIElement" /></reference><reference type="RAIN.Memory.BasicMemory"
+      refcount="1" id="1"><field type="System.Collections.Generic.List" id="_memoryItems"
+      elementtype="RAIN.Memory.BasicMemory+MemoryItem" /></reference><reference type="RAIN.Minds.BasicMind"
+      refcount="1" id="2"><field type="RAIN.BehaviorTrees.BTAsset" id="_behaviorTreeAsset"
+      gameobject="1" /><field type="System.Collections.Generic.List" id="_behaviorTreeBindings"
+      elementtype="RAIN.BehaviorTrees.BTAssetBinding" /></reference><reference type="RAIN.Motion.BasicMotor"
+      refcount="1" id="3"><field value="1" type="System.Single" id="_speed" /><field
+      value="360" type="System.Single" id="_rotationSpeed" /><field value="0.1" type="System.Single"
+      id="_closeEnoughDistance" /><field value="0.1" type="System.Single" id="_closeEnoughAngle"
+      /><field value="360" type="System.Single" id="_faceBeforeMoveAngle" /><field
+      value="1" type="System.Single" id="_maxHeightOffset" /><field value="False"
+      type="System.Boolean" id="_allow3DMovement" /><field value="False" type="System.Boolean"
+      id="_allow3DRotation" /><field value="True" type="System.Boolean" id="_allowOffGraphMovement"
+      /></reference><reference type="RAIN.Animation.BasicAnimator" refcount="1" id="4"><field
+      type="System.Collections.Generic.List" id="_animationStates" elementtype="RAIN.Animation.BasicAnimator+BasicAnimatorState"
+      /></reference><reference type="RAIN.Navigation.BasicNavigator" refcount="1"
+      id="5"><field value="False" type="System.Boolean" id="_drawPaths" /><field value="0,1,0,1"
+      type="UnityEngine.Color" id="_pathColor" /><field value="-0.5" type="System.Single"
+      id="_outlineColorOffset" /><field value="100" type="System.Int32" id="_maxPathfindingSteps"
+      /><field value="0" type="System.Single" id="_maxPathLength" /><field type="System.Collections.Generic.List"
+      id="_graphTags" elementtype="System.String" /></reference><reference type="RAIN.Perception.BasicSenses"
+      refcount="1" id="6"><field type="System.Collections.Generic.List" id="_sensors"
+      elementtype="RAIN.Perception.Sensors.RAINSensor" /></reference></references></component>
+    _serializedGameObjects:
+    - {fileID: 186822}
+    - {fileID: 11400000, guid: 00dfc3ed613807445acae3495bba5169, type: 2}
+    _serializedCustomData: []
 --- !u!114 &11482176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1565,10 +1630,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .379999995
+  m_Radius: .360000014
   m_Height: 1.77999997
   m_Direction: 1
-  m_Center: {x: -.0900000036, y: .839999974, z: 0}
+  m_Center: {x: 0, y: .910000026, z: 0}
 --- !u!136 &13673776
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1834,7 +1899,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.27242708e-07, y: .259400219, z: 1.1920929e-07}
+  m_ConnectedAnchor: {x: -8.19563866e-08, y: .259400249, z: -1.00582838e-07}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -1876,7 +1941,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 2.27708369e-07, y: .416600347, z: -7.82310963e-08}
+  m_ConnectedAnchor: {x: 1.07800588e-07, y: .416600376, z: -7.82310963e-08}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -1918,7 +1983,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .183079734, y: .315340787, z: .0885139331}
+  m_ConnectedAnchor: {x: .183079615, y: .315340757, z: .0885139331}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1960,7 +2025,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.111700006, y: -.0044000498, z: -.0111998757}
+  m_ConnectedAnchor: {x: -.111700036, y: -.00439992454, z: -.0112000927}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -2002,7 +2067,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.7869828e-07, y: .416600376, z: 2.98023224e-08}
+  m_ConnectedAnchor: {x: -4.81959432e-08, y: .416600317, z: -1.49011612e-08}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -2044,7 +2109,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.52271241e-07, y: .161200032, z: 1.63912773e-07}
+  m_ConnectedAnchor: {x: -1.11758709e-08, y: .161200076, z: -5.96046448e-08}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2086,7 +2151,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.201342553, y: .30194968, z: .0774351209}
+  m_ConnectedAnchor: {x: -.201342732, y: .30194968, z: .077435106}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2128,7 +2193,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.0138286212, y: .520609975, z: .10408558}
+  m_ConnectedAnchor: {x: -.0138286054, y: .520610034, z: .104085341}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2170,7 +2235,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .111700021, y: -.00439988915, z: -.0112002669}
+  m_ConnectedAnchor: {x: .111700118, y: -.00439996365, z: -.0112000294}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -2212,7 +2277,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 2.23517418e-07, y: .2594001, z: 8.94069672e-08}
+  m_ConnectedAnchor: {x: 8.19563866e-08, y: .259400129, z: -1.34110451e-07}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
