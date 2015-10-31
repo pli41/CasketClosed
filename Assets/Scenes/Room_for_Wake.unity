@@ -9084,8 +9084,8 @@ Prefab:
         id="_isActive" /><field type="UnityEngine.GameObject" id="_body" gameobject="0"
         /><field type="RAIN.Memory.BasicMemory" reference="1" id="_workingMemory"
         childrenvisible="False" /><field type="RAIN.Minds.BasicMind" reference="2"
-        id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
-        reference="3" id="_motor" childrenvisible="True" /><field type="RAIN.Animation.MecanimAnimator"
+        id="_mind" childrenvisible="True" /><field type="RAIN.Motion.BasicMotor" reference="3"
+        id="_motor" childrenvisible="False" /><field type="RAIN.Animation.MecanimAnimator"
         reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
         reference="5" id="_navigator" /><field type="RAIN.Perception.BasicSenses"
         reference="6" id="_senses" /><field type="System.Collections.Generic.List"
@@ -9109,22 +9109,20 @@ Prefab:
         reference="9" id="_rightHand" /><field type="RAIN.Animation.MecanimAnimator+IKTarget"
         reference="10" id="_leftHand" /><field type="RAIN.Animation.MecanimAnimator+IKLookAt"
         reference="11" id="_lookAt" /><field type="System.Collections.Generic.List"
-        id="_animationStates" elementtype="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"><field
-        type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" reference="12"
-        id="element0" /></field></reference><reference type="RAIN.Navigation.BasicNavigator"
-        refcount="1" id="5"><field value="False" type="System.Boolean" id="_drawPaths"
-        /><field value="0,1,0,1" type="UnityEngine.Color" id="_pathColor" /><field
-        value="-0.5" type="System.Single" id="_outlineColorOffset" /><field value="100"
-        type="System.Int32" id="_maxPathfindingSteps" /><field value="0" type="System.Single"
-        id="_maxPathLength" /><field type="System.Collections.Generic.List" id="_graphTags"
-        elementtype="System.String" /></reference><reference type="RAIN.Perception.BasicSenses"
-        refcount="1" id="6"><field type="System.Collections.Generic.List" id="_sensors"
-        elementtype="RAIN.Perception.Sensors.RAINSensor" /></reference><reference
-        type="RAIN.Animation.MecanimAnimator+IKTarget" refcount="1" id="7"><field
-        value="False" type="System.Boolean" id="isActive" /><field value="0" type="System.Single"
-        id="positionWeight" /><field value="0" type="System.Single" id="rotationWeight"
-        /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector" /><field
-        value="0,0,0" type="UnityEngine.Vector3" id="rotationVector" /></reference><reference
+        id="_animationStates" elementtype="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"
+        /></reference><reference type="RAIN.Navigation.BasicNavigator" refcount="1"
+        id="5"><field value="False" type="System.Boolean" id="_drawPaths" /><field
+        value="0,1,0,1" type="UnityEngine.Color" id="_pathColor" /><field value="-0.5"
+        type="System.Single" id="_outlineColorOffset" /><field value="100" type="System.Int32"
+        id="_maxPathfindingSteps" /><field value="0" type="System.Single" id="_maxPathLength"
+        /><field type="System.Collections.Generic.List" id="_graphTags" elementtype="System.String"
+        /></reference><reference type="RAIN.Perception.BasicSenses" refcount="1" id="6"><field
+        type="System.Collections.Generic.List" id="_sensors" elementtype="RAIN.Perception.Sensors.RAINSensor"
+        /></reference><reference type="RAIN.Animation.MecanimAnimator+IKTarget" refcount="1"
+        id="7"><field value="False" type="System.Boolean" id="isActive" /><field value="0"
+        type="System.Single" id="positionWeight" /><field value="0" type="System.Single"
+        id="rotationWeight" /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector"
+        /><field value="0,0,0" type="UnityEngine.Vector3" id="rotationVector" /></reference><reference
         type="RAIN.Animation.MecanimAnimator+IKTarget" refcount="1" id="8"><field
         value="False" type="System.Boolean" id="isActive" /><field value="0" type="System.Single"
         id="positionWeight" /><field value="0" type="System.Single" id="rotationWeight"
@@ -9148,23 +9146,20 @@ Prefab:
         id="lookAtClampWeight" /><field value="90" type="System.Single" id="maxTurnRate"
         /><field value="0,0,0" type="UnityEngine.Vector3" id="positionVector" /><field
         value="0,0,0" type="UnityEngine.Vector3" id="lastPositionVector" /></reference><reference
-        type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="1" id="12"><field
-        value="Base Layer.WalkFWD" type="System.String" id="mecanimState" /><field
-        value="0" type="System.Int32" id="layer" /><field type="RAIN.Animation.MecanimParameterValue"
-        reference="13" id="startParameter" childrenvisible="True" /><field type="RAIN.Animation.MecanimParameterValue"
-        reference="15" id="stopParameter" /></reference><reference type="RAIN.Animation.MecanimParameterValue"
-        refcount="1" id="13"><field value="" type="System.String" id="parameterName"
-        /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
-        id="parameterType" /><field type="RAIN.Representation.Expression" reference="14"
-        id="parameterValue" /><field value="0" type="System.Single" id="dampTime"
-        /></reference><reference type="RAIN.Representation.Expression" refcount="1"
-        id="14" customdata="0" /><reference type="RAIN.Animation.MecanimParameterValue"
-        refcount="1" id="15"><field value="" type="System.String" id="parameterName"
-        /><field value="Float" type="RAIN.Animation.MecanimParameterValue+SupportedMecanimType"
-        id="parameterType" /><field type="RAIN.Representation.Expression" reference="16"
-        id="parameterValue" /><field value="0" type="System.Single" id="dampTime"
-        /></reference><reference type="RAIN.Representation.Expression" refcount="1"
-        id="16" customdata="1" /></references></component>
+        type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState" refcount="0" id="12"
+        /><reference type="RAIN.Animation.MecanimParameterValue" refcount="0" id="13"
+        /><reference type="RAIN.Representation.Expression" refcount="0" id="14" customdata="6"
+        /><reference type="RAIN.Animation.MecanimParameterValue" refcount="0" id="15"
+        /><reference type="RAIN.Representation.Expression" refcount="0" id="16" customdata="7"
+        /><reference type="RAIN.Motion.MecanimMotor+MotorParameter" refcount="1" id="17"><field
+        value="AnimState" type="System.String" id="parameterName" /><field value="Speed"
+        type="RAIN.Motion.MecanimMotor+MotorField" id="motorField" /><field value="0"
+        type="System.Single" id="dampTime" /></reference><reference type="RAIN.Animation.MecanimAnimator+MecanimAnimatorState"
+        refcount="0" id="18" /><reference type="RAIN.Animation.MecanimParameterValue"
+        refcount="0" id="19" /><reference type="RAIN.Representation.Expression" refcount="0"
+        id="20" customdata="2" /><reference type="RAIN.Animation.MecanimParameterValue"
+        refcount="0" id="21" /><reference type="RAIN.Representation.Expression" refcount="0"
+        id="22" customdata="3" /></references></component>
       objectReference: {fileID: 0}
     - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
       propertyPath: _dataSerializer._serializedGameObjects.Array.size
@@ -9181,7 +9176,7 @@ Prefab:
         type: 2}
     - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.size
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[0]._stringData
@@ -9189,6 +9184,30 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
       propertyPath: _dataSerializer._serializedCustomData.Array.data[1]._stringData
+      value: DQo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[2]._stringData
+      value: DQo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[3]._stringData
+      value: DQo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[4]._stringData
+      value: DQo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[5]._stringData
+      value: DQo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[6]._stringData
+      value: DQo=
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453634, guid: 389bdaeaa098bd34782a290f57ef147b, type: 2}
+      propertyPath: _dataSerializer._serializedCustomData.Array.data[7]._stringData
       value: DQo=
       objectReference: {fileID: 0}
     m_RemovedComponents: []
