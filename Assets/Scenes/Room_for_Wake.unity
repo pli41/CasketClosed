@@ -3780,8 +3780,8 @@ MonoBehaviour:
       id="_ignoredTags" elementtype="System.String" /><field type="System.Collections.Generic.List"
       id="_unwalkableTags" elementtype="System.String" /><field type="System.Collections.Generic.List"
       id="_graphTags" elementtype="System.String" /><field value="45" type="System.Single"
-      id="_maxSlope" /><field value="2" type="System.Single" id="_walkableHeight"
-      /><field value="0.55" type="System.Single" id="_walkableRadius" /><field value="0.75"
+      id="_maxSlope" /><field value="1.39" type="System.Single" id="_walkableHeight"
+      /><field value="0.55" type="System.Single" id="_walkableRadius" /><field value="0.55"
       type="System.Single" id="_stepHeight" /><field value="0.1" type="System.Single"
       id="_cellSize" /><field value="0.2" type="System.Single" id="_maxVertexError"
       /><field value="5" type="System.Single" id="_maxSegmentLength" /><field type="RAIN.Navigation.NavMesh.NavMeshPathGraph"
@@ -8390,6 +8390,18 @@ Prefab:
     - target: {fileID: 434802, guid: ba57b945d2448eb4b8e263e034660c20, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13636456, guid: ba57b945d2448eb4b8e263e034660c20, type: 2}
+      propertyPath: m_Height
+      value: 1.88999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 13636456, guid: ba57b945d2448eb4b8e263e034660c20, type: 2}
+      propertyPath: m_Center.y
+      value: .889999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 13636456, guid: ba57b945d2448eb4b8e263e034660c20, type: 2}
+      propertyPath: m_Radius
+      value: .379999995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba57b945d2448eb4b8e263e034660c20, type: 2}
