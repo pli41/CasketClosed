@@ -82,7 +82,8 @@ public class Possessible : MonoBehaviour {
 	public void dePossess(){
 		if (possDelay > 10) {
       
-            Kill ();
+            //Kill ();
+
 			player.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = true;
 
 			isPossessed = false;
@@ -94,6 +95,7 @@ public class Possessible : MonoBehaviour {
 			player.gameObject.GetComponent<CapsuleCollider> ().enabled = true;
 			player.gameObject.GetComponent<Rigidbody> ().useGravity = true;
 			possessable = false;
+            ai.enabled = true;
 		}
 	}
 
