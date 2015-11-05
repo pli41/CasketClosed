@@ -1796,6 +1796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e19f2b7976f147408a6461e4033da41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ai: {fileID: 0}
   boneRig: []
   ReviveTime: 50
 --- !u!65 &367020651
@@ -9755,6 +9756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e19f2b7976f147408a6461e4033da41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ai: {fileID: 0}
   boneRig: []
   ReviveTime: 50
 --- !u!65 &1953106037

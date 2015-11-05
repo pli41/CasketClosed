@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using RAIN.Core;
 using System.Collections;
 
 public class Possessible : MonoBehaviour {
@@ -7,12 +8,14 @@ public class Possessible : MonoBehaviour {
 	bool isPossessed = false;
 	int possDelay;
 	Animator anim;
+    public AIRig ai;
 	public Component[] boneRig;
     Collider[] colliders;
 	public int ReviveTime;
 	int time;
 	// Use this for initialization
 	void Start () {
+        ai = GetComponentInChildren<AIRig>();
 		possDelay = 0;
 		possessable = false;
 		anim = GetComponent<Animator> ();
@@ -26,15 +29,21 @@ public class Possessible : MonoBehaviour {
 			player.transform.position = transform.position;
 			player.transform.rotation = transform.rotation;
 			if (Input.GetAxisRaw ("Vertical") > 0) {
-				anim.SetInteger ("AnimState", 1);
+				anim.SetFloat ("speed", 1.5f);
 			} else if (Input.GetAxisRaw ("Vertical") < 0) {
-				anim.SetInteger ("AnimState", -1);
+				anim.SetFloat ("speed", -1f);
 			} else {
-				anim.SetInteger ("AnimState", 0);
+				anim.SetFloat("speed", 0);
 			}
-			if (Input.GetAxisRaw ("Horizontal") != 0) {
-				transform.Rotate (0, Input.GetAxisRaw ("Horizontal") * 80.0f * Time.deltaTime, 0, Space.World);
-			}
+			if (Input.GetAxisRaw ("Horizontal") > 0) {
+                anim.SetFloat("turn", 360f);
+			} else if (Input.GetAxisRaw("Horizontal") < 0)
+            {
+                anim.SetFloat("turn", -360f);
+            } else
+            {
+                anim.SetFloat("turn", 0f);
+            }
 			possDelay += 1;
 		} else {
 			anim.SetInteger ("AnimState", 0);
@@ -57,7 +66,8 @@ public class Possessible : MonoBehaviour {
 	public void possess(){
 
 		if (possessable && !player.GetComponent<GhostScript>().poss) {
-
+            ai.enabled = false;
+            anim.SetInteger("AnimState", 0);
 			player.gameObject.GetComponent<CapsuleCollider>().enabled = false;
 			player.gameObject.GetComponent<Rigidbody>().useGravity = false;
 			transform.position = player.transform.position; 
