@@ -21,7 +21,7 @@ public class Possessible : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		boneRig = gameObject.GetComponentsInChildren <Rigidbody>();
         colliders = gameObject.GetComponentsInChildren<Collider>();
-        Revive();
+       // Revive();
     }
 
 	void Update () { 

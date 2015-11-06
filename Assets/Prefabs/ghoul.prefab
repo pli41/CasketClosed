@@ -17,6 +17,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &147336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 436050}
+  - 114: {fileID: 11480838}
+  m_Layer: 0
+  m_Name: Entity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &168998
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,13 +59,26 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168998}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.96130753, y: .200000003, z: -1.95482492}
+  m_LocalRotation: {x: 0, y: .999247551, z: 0, w: -.0387872681}
+  m_LocalPosition: {x: 7.48000002, y: .199999988, z: -.0700000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 440280}
+  - {fileID: 436050}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &436050
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434802}
+  m_RootOrder: 1
 --- !u!4 &440280
 Transform:
   m_ObjectHideFlags: 1
@@ -75,7 +104,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &6574734
 BoxCollider:
@@ -118,6 +147,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookSmoother: 3
+  poss: 0
+  npc: {fileID: 0}
+--- !u!114 &11480838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <component version="1.3" type="RAIN.Entities.EntityRig"><fields><field
+      value="OnWhenSelected" type="RAIN.Core.VisualModeEnum" id="_visualMode" /><field
+      value="True" type="System.Boolean" id="_useUnityMessages" /><field type="RAIN.Entities.Entity"
+      reference="0" id="_entity" /></fields><references><reference type="RAIN.Entities.Entity"
+      refcount="1" id="0"><field value="ghoul" type="System.String" id="_entityName"
+      /><field value="True" type="System.Boolean" id="_isActive" /><field type="UnityEngine.GameObject"
+      id="_form" gameobject="0" /><field type="System.Collections.Generic.List" id="_aspects"
+      elementtype="RAIN.Entities.Aspects.RAINAspect"><field type="RAIN.Entities.Aspects.VisualAspect"
+      reference="1" id="element0" /></field></reference><reference type="RAIN.Entities.Aspects.VisualAspect"
+      refcount="1" id="1"><field value="True" type="System.Boolean" id="_showVisual"
+      /><field value="Player" type="System.String" id="_aspectName" /><field value="True"
+      type="System.Boolean" id="_isActive" /><field value="0,0.6,0,1" type="UnityEngine.Color"
+      id="_aspectColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
+      /><field value="0.4" type="System.Single" id="_selectionColorOffset" /><field
+      value="0.1" type="System.Single" id="_visualSize" /><field type="UnityEngine.Transform"
+      id="_mountPoint" gameobject="1" /><field value="0,0,0" type="UnityEngine.Vector3"
+      id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3" id="_angleOffset"
+      /></reference></references></component>
+    _serializedGameObjects:
+    - {fileID: 168998}
+    - {fileID: 434802}
+    _serializedCustomData: []
 --- !u!136 &13636456
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -126,11 +191,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 168998}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .200000003
-  m_Height: 1.5
+  m_Enabled: 0
+  m_Radius: .379999995
+  m_Height: 1.88999999
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: .889999986, z: 0}
 --- !u!136 &13641244
 CapsuleCollider:
   m_ObjectHideFlags: 1
