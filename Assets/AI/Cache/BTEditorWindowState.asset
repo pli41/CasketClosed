@@ -15,10 +15,10 @@ MonoBehaviour:
   HolderNodes:
   - AssetPath: .currentai
     BehaviorTreeName: (No AI Selected)
-    BehaviorTreeID: 40
+    BehaviorTreeID: 55
     BehaviorTreeBindings: []
-    LastUpdate: 635824071217789890
-    LastModified: 635824031600000000
+    LastUpdate: 635824119020072870
+    LastModified: 635824116130000000
     Errored: 0
   - AssetPath: .createxml
     BehaviorTreeName: Create New Behavior Tree
@@ -80,8 +80,8 @@ MonoBehaviour:
     BehaviorTreeName: spider
     BehaviorTreeID: 55
     BehaviorTreeBindings: []
-    LastUpdate: 635824091229817870
-    LastModified: 635824085110000000
+    LastUpdate: 635824119020072870
+    LastModified: 635824116130000000
     Errored: 0
   TreeState:
     _branchRepo:
@@ -883,7 +883,7 @@ MonoBehaviour:
         _recordChange: 0
         _changed: 0
       - _field: repeatuntil
-        _currentValue: running
+        _currentValue: 
         _recordChange: 1
         _changed: 0
       - _field: debugbreak
@@ -927,14 +927,14 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: movetargetvariable
-        _currentValue: 
+        _currentValue: moveTarget
         _recordChange: 1
         _changed: 0
       _type: 22
       _stateIndex: 18
       _parent: 19
-      _lastUpdate: 635824091219778740
-      _children: 3a0000003b000000
+      _lastUpdate: 635824117201879020
+      _children: 3a000000
       _variables: 
       _focused: 0
     - _fields:
@@ -985,7 +985,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 19
       _parent: 55
-      _lastUpdate: 635824090529520040
+      _lastUpdate: 635824116132676540
       _children: 12000000
       _variables: 
       _focused: 0
@@ -2661,7 +2661,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 55
       _parent: 0
-      _lastUpdate: 635824091219778740
+      _lastUpdate: 635824119020072870
       _children: 13000000
       _variables: 
       _focused: 0
@@ -2673,58 +2673,14 @@ MonoBehaviour:
       _children: 
       _variables: 
       _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: mecparam
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: parametername
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: valueexpression
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: damptime
-        _currentValue: 0
-        _recordChange: 1
-        _changed: 0
-      - _field: parametertype
-        _currentValue: trigger
-        _recordChange: 1
-        _changed: 0
-      _type: 13
-      _stateIndex: 57
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
       _parent: 0
-      _lastUpdate: 635824091180608810
+      _lastUpdate: 0
       _children: 
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: move
@@ -2755,11 +2711,11 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: movetarget
-        _currentValue: 
+        _currentValue: moveTarget
         _recordChange: 1
         _changed: 0
       - _field: movespeed
-        _currentValue: 5
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: facetarget
@@ -2781,48 +2737,8 @@ MonoBehaviour:
       _type: 14
       _stateIndex: 58
       _parent: 18
-      _lastUpdate: 0
+      _lastUpdate: 635824119020072870
       _children: 
       _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: animate
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: running
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: animationstate
-        _currentValue: '"SpiderWalk"'
-        _recordChange: 1
-        _changed: 0
-      _type: 2
-      _stateIndex: 59
-      _parent: 18
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    _freeList: 0b000000100000001400000038000000
+      _focused: 1
+    _freeList: 0b00000010000000140000003800000039000000
