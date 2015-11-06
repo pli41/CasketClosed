@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dataSerializer:
     _serializedData: <scriptableobject version="1.3" type="RAIN.BehaviorTrees.BTAsset"><fields><field
-      value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;wander&quot;
+      value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;BasicAIWalker&quot;
       debugbreak=&quot;False&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
       repeatuntil=&quot;&quot; name=&quot;root&quot; debugbreak=&quot;False&quot;&gt;&lt;parallel
       tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;&quot;
@@ -22,17 +22,25 @@ MonoBehaviour:
       name=&quot;detect&quot; matchtype=&quot;best&quot; entityobjectvariable=&quot;lady&quot;
       debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
       aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;Lady&amp;quot;&quot;
-      /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;selector&quot;
-      debugbreak=&quot;False&quot;&gt;&lt;constraint repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;sees Lady&quot; debugbreak=&quot;False&quot; constraint=&quot;lady
-      != null&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot; repeatuntil=&quot;&quot;
-      name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;move turnspeed=&quot;&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;move&quot; movetarget=&quot;lady&quot;
-      movespeed=&quot;&quot; facetarget=&quot;&quot; debugbreak=&quot;False&quot;
+      /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;running&quot;
+      name=&quot;selector&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;sawLady&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;sawLady == true&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;move
+      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;move&quot;
+      movetarget=&quot;lady&quot; movespeed=&quot;&quot; facetarget=&quot;&quot; debugbreak=&quot;False&quot;
       closeenoughdistance=&quot;2&quot; closeenoughangle=&quot;&quot; /&gt;&lt;mecparam
       valueexpression=&quot;3&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       parametertype=&quot;integer&quot; parametername=&quot;AnimState&quot; name=&quot;mecparam&quot;
-      debugbreak=&quot;False&quot; damptime=&quot;0&quot; /&gt;&lt;/sequencer&gt;&lt;/constraint&gt;&lt;waypointpatrol
+      debugbreak=&quot;False&quot; damptime=&quot;0&quot; /&gt;&lt;timer waitforsec=&quot;1&quot;
+      returnvalue=&quot;success&quot; priority=&quot;&quot; name=&quot;timer&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;expression returnvalue=&quot;evaluate&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;expression&quot; expression=&quot;sawLady
+      = false;&quot; debugbreak=&quot;False&quot; /&gt;&lt;/sequencer&gt;&lt;/constraint&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;sees Lady&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;(lady != null) &amp;amp;&amp;amp; sawLady == false&quot;&gt;&lt;expression
+      returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; name=&quot;expression&quot;
+      expression=&quot;sawLady = true&quot; debugbreak=&quot;False&quot; /&gt;&lt;/constraint&gt;&lt;waypointpatrol
       waypointsetvariable=&quot;&amp;quot;PatrolRoute&amp;quot;&quot; waypointactiontype=&quot;patrol&quot;
       traversetype=&quot;loop&quot; traverseorder=&quot;forward&quot; repeatuntil=&quot;&quot;
       priority=&quot;&quot; pathtargetvariable=&quot;&quot; name=&quot;waypointpatrol&quot;
