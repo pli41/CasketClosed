@@ -44,26 +44,35 @@ MonoBehaviour:
       repeatuntil=&quot;&quot; name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;move
       turnspeed=&quot;&quot; repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;move&quot;
       movetarget=&quot;lady&quot; movespeed=&quot;&quot; facetarget=&quot;&quot; debugbreak=&quot;False&quot;
-      closeenoughdistance=&quot;2&quot; closeenoughangle=&quot;&quot; /&gt;&lt;mecparam
+      closeenoughdistance=&quot;&quot; closeenoughangle=&quot;&quot; /&gt;&lt;mecparam
       valueexpression=&quot;3&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       parametertype=&quot;integer&quot; parametername=&quot;AnimState&quot; name=&quot;mecparam&quot;
       debugbreak=&quot;False&quot; damptime=&quot;0&quot; /&gt;&lt;/sequencer&gt;&lt;/constraint&gt;&lt;constraint
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;sawMan&quot; debugbreak=&quot;False&quot;
-      constraint=&quot;sawMan == true&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;move
-      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;move
-      to casket&quot; movetarget=&quot;&amp;quot;Casket&amp;quot;&quot; movespeed=&quot;&quot;
+      constraint=&quot;sawMan == true&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
+      repeatuntil=&quot;&quot; name=&quot;set path target&quot; expression=&quot;&amp;quot;targetVariable
+      = Casket&amp;quot;&quot; debugbreak=&quot;False&quot; /&gt;&lt;waypointpath
+      waypointsetvariable=&quot;&amp;quot;Waypoint Network&amp;quot;&quot; waypointactiontype=&quot;path&quot;
+      traversetype=&quot;pingpong&quot; traverseorder=&quot;forward&quot; repeatuntil=&quot;&quot;
+      pathtargetvariable=&quot;&amp;quot;targetLocation&amp;quot;&quot; name=&quot;move
+      on waypoint network&quot; movetargetvariable=&quot;moveTarget&quot; debugbreak=&quot;False&quot;&gt;&lt;move
+      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;move&quot; movetarget=&quot;moveTarget&quot;
+      movespeed=&quot;&quot; facetarget=&quot;&quot; debugbreak=&quot;False&quot;
+      closeenoughdistance=&quot;&quot; closeenoughangle=&quot;&quot; /&gt;&lt;expression
+      returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; name=&quot;expression&quot;
+      expression=&quot;sawMan == false&quot; debugbreak=&quot;False&quot; /&gt;&lt;/waypointpath&gt;&lt;/constraint&gt;&lt;sequencer
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;set path variable&quot;
+      expression=&quot;&amp;quot;targetLocation = Main Room&amp;quot;&quot; debugbreak=&quot;False&quot;
+      /&gt;&lt;waypointpath waypointsetvariable=&quot;&amp;quot;Waypoint Network&amp;quot;&quot;
+      waypointactiontype=&quot;path&quot; traversetype=&quot;pingpong&quot; traverseorder=&quot;forward&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; pathtargetvariable=&quot;&amp;quot;targetLocation&amp;quot;&quot;
+      name=&quot;move on waypoint network&quot; movetargetvariable=&quot;moveTarget&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
+      name=&quot;move&quot; movetarget=&quot;moveTarget&quot; movespeed=&quot;&quot;
       facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;&quot;
-      closeenoughangle=&quot;&quot; /&gt;&lt;timer waitforsec=&quot;2&quot; returnvalue=&quot;success&quot;
-      priority=&quot;&quot; name=&quot;timer&quot; debugbreak=&quot;False&quot; /&gt;&lt;expression
-      returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;expression&quot; expression=&quot;sawMan == false&quot; debugbreak=&quot;False&quot;
-      /&gt;&lt;/sequencer&gt;&lt;/constraint&gt;&lt;sequencer usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;move
-      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;move&quot;
-      movetarget=&quot;&amp;quot;Main Room&amp;quot;&quot; movespeed=&quot;&quot;
-      facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;&quot;
-      closeenoughangle=&quot;&quot; /&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/sequencer&gt;&lt;/behaviortree&gt;"
+      closeenoughangle=&quot;&quot; /&gt;&lt;/waypointpath&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/sequencer&gt;&lt;/behaviortree&gt;"
       type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
       elementtype="System.String" /></fields><references /></scriptableobject>
     _serializedGameObjects: []
