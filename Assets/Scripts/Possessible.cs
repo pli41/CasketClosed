@@ -92,9 +92,9 @@ public class Possessible : MonoBehaviour {
             player.GetComponent<GhostScript>().poss = false;
 			possDelay = 0;
 
-			player.gameObject.GetComponent<CapsuleCollider> ().enabled = true;
+			
 			player.gameObject.GetComponent<Rigidbody> ().useGravity = true;
-			possessable = false;
+			
             ai.enabled = true;
 		}
 	}
