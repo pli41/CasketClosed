@@ -22,8 +22,31 @@
    f. Create a custom RAIN AI element for an NPC that uses position prediction of another game character or object. [Done; the child NPC will use position prediction to intercept the spider]
    g. Create 3 NPC AI types that have different behavior trees. [Done; BasicAIWalker, ChildNPC, FemaleNPC]
    h. NPCs support game feel. [Done]
+ChildNPC
+Is set up with a RAIN AI Entity named “Child”
+Has a separate animator called AI Animator_ChildNPC :: Make sure animator changes for this prefab are made in that controller only
+Has a separate Behavior tree called ChildNPCTree
+this tree is a duplicate of BasicNPCTree, which is implemented by basic walker, and will have to be changed
+Is set up for possession
+Chases a spider around the room, advancing its move target to anticipate the spiders’ motion
+
+FemaleNPC 
+Is set up with a RAIN AI Entity named “Lady”
+Has a separate animator called AI Animator_FemaleNPC
+Has a separate Behavior tree called FemaleNPCTree  :: Make sure animator changes for this prefab are made in that controller only
+Is set up for possession
+Goes to main room nav target
+if sees lady, goes to talk with lady
+if sees man, goes to casket nav target
+
+BasicAIWalker (Man):
+Follows a waypoint route until it sees a RAIN AI Entity named “Lady”
+walks to Lady, performs a gesture animation, like in conversation
+if Lady is no longer in vision, returns to patrol route
+Waypoints selected randomly, so multiple NPCs can use route
+has RAIN AI Entity named “Man”
 3. Imported resources: all models are imported from Unity asset store.
 4. No special instruction needed for building and running of the code.
-5. Exact steps to test: walking in the room is enough to test the game features.
+5. Exact steps to test: walking in the room is enough to test the game features. USE arrow keys to walk, space to possess/ depossess
 6. Main scene file: Room_for_Wake
-7. URL
+7. prism.gatech.edu\~gstache3\CuddlyCupcakes_M3.html
