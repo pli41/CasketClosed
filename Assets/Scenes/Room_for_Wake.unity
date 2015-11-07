@@ -136,6 +136,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_IsPrefabParent: 0
@@ -811,7 +815,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 347315882}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1182,6 +1186,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_IsPrefabParent: 0
@@ -1482,6 +1490,10 @@ Prefab:
     - target: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
       propertyPath: m_LocalScale.y
       value: 2.93158579
+      objectReference: {fileID: 0}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
@@ -2053,6 +2065,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_IsPrefabParent: 0
@@ -2526,6 +2542,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 482a3353196b9bf4bbcf86f9e9f3e5a8, type: 2}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_IsPrefabParent: 0
@@ -3409,6 +3429,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_IsPrefabParent: 0
@@ -3560,6 +3584,10 @@ Prefab:
     - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
       propertyPath: m_TagString
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
@@ -3892,6 +3920,10 @@ Prefab:
     - target: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
       propertyPath: m_LocalScale.z
       value: 5.00462484
+      objectReference: {fileID: 0}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
@@ -4330,7 +4362,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.52653027
+      value: -2.57999992
       objectReference: {fileID: 0}
     - target: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4338,7 +4370,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 6.49483871
+      value: 7.82000017
       objectReference: {fileID: 0}
     - target: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4378,7 +4410,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 482a3353196b9bf4bbcf86f9e9f3e5a8, type: 2}
     - target: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
       propertyPath: m_LocalScale.z
-      value: 7.4779129
+      value: 9.98140621
+      objectReference: {fileID: 0}
+    - target: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
@@ -6370,7 +6406,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2019814870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Inner Wall with Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6384,7 +6420,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2019814869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.5200005, y: .740869522, z: -8.63483906}
+  m_LocalPosition: {x: -13.3800001, y: .740869522, z: -11.0500002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1511381922}
@@ -6716,7 +6752,7 @@ GameObject:
   - 23: {fileID: 2132608332}
   - 114: {fileID: 2132608336}
   - 95: {fileID: 2132608335}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hinge
   m_TagString: Door
   m_Icon: {fileID: 0}
