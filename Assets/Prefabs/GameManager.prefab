@@ -42,8 +42,8 @@ MonoBehaviour:
   timerUI: {fileID: 0}
   blinkUI: {fileID: 0}
   mode: 0
-  posessionTime: 20
-  outOfBodyTime: 20
+  posessionTime: 10
+  outOfBodyTime: 10
   player: {fileID: 0}
   flashSpeed: .100000001
 --- !u!1001 &100100000
