@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 	public Text timerUI;
 	public Image blinkUI;
 	public MODE mode;
+    private float totalTime;
 	private float currentPosTime;
 	public float posessionTime;
 	public float outOfBodyTime;
@@ -26,12 +27,14 @@ public class GameManager : MonoBehaviour {
 		wasPossessing = false;
 		currentPosTime = outOfBodyTime;
 		blinkTimer = 0;
+        totalTime = 0;
 		furniture = GameObject.FindGameObjectsWithTag ("Chair");
 		//disablePhysics ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        totalTime += Time.deltaTime;
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
 			mode = MODE.text;
 		}
@@ -77,7 +80,8 @@ public class GameManager : MonoBehaviour {
 		if (ghost.poss) {
 			ghost.npc.GetComponent<Possessible> ().dePossess ();
 		} else {
-			Application.LoadLevel ("room_for_wake");
+			Application.LoadLevel ("DeathScreen");
+            PlayerPrefs.SetFloat("time", totalTime);
 		}
 	}
 	void activatePhysics(){
