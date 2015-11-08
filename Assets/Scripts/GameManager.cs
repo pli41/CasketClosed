@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
-
+    ArrayList objectives;
+    private Text objectiveText;
 	public enum MODE{text, image};
 	GameObject[] furniture;
 	public Text timerUI;
@@ -23,13 +24,14 @@ public class GameManager : MonoBehaviour {
 	bool wasPossessing;
 	// Use this for initialization
 	void Start () {
+        objectiveText = GameObject.Find("ObjectiveText").GetComponent<Text>();
 		ghost = player.GetComponent<GhostScript> ();
 		wasPossessing = false;
 		currentPosTime = outOfBodyTime;
 		blinkTimer = 0;
         totalTime = 0;
 		furniture = GameObject.FindGameObjectsWithTag ("Chair");
-		//disablePhysics ();
+		
 	}
 	
 	// Update is called once per frame
@@ -45,12 +47,12 @@ public class GameManager : MonoBehaviour {
 			wasPossessing = ghost.poss;
 			currentPosTime = posessionTime;
 			blinkTimer = 0;
-			activatePhysics();
+
 		} else if (wasPossessing && !ghost.poss) {
 			wasPossessing = ghost.poss;
 			currentPosTime = outOfBodyTime;
 			blinkTimer = 0;
-			disablePhysics();
+	
 		}
 		if(currentPosTime > 0){
 			resetTimer = 0;
@@ -84,19 +86,7 @@ public class GameManager : MonoBehaviour {
             PlayerPrefs.SetFloat("time", totalTime);
 		}
 	}
-	void activatePhysics(){
-		foreach (GameObject chair in furniture) {
-			chair.GetComponent<Rigidbody> ().isKinematic = false;
-			chair.GetComponent<Collider> ().enabled = true;
-		}
-	}
-
-	void disablePhysics(){
-		foreach (GameObject chair in furniture) {
-			chair.GetComponent<Rigidbody> ().isKinematic = true;
-			chair.GetComponent<Collider> ().enabled = false;
-		}
-	}
+	
 
 	void Blink(){
 		blinkUI.color = new Vector4(1,1,1,.5f);

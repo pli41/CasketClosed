@@ -5,7 +5,7 @@ using System.Collections;
 public class Possessible : MonoBehaviour {
 	GameObject player;
 	bool possessable;
-	bool isPossessed = false;
+	public bool isPossessed = false;
 	int possDelay;
 	Animator anim;
     public AIRig ai;
