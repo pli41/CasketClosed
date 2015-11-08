@@ -14,7 +14,7 @@ public class ObjectivePosition : Objective {
 
 	public override void Checked() {
         float dist = (target.transform.position - player.transform.position).magnitude;
-        if (dist < 1.5f) {
+        if (dist < 3f) {
             accomplished = true;
         }
 	}

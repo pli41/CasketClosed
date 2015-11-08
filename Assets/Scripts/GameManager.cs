@@ -42,6 +42,12 @@ public class GameManager : MonoBehaviour {
         Objective one = new ObjectivePosition("Go To the coffin", GameObject.Find("Coffin"));
         objectiveText.text = one.getText();
         objectives.Add(one);
+        Objective two = new ObjectivePosssession("Possess the man in the purple shirt", "Man");
+        objectives.Add(two);
+        Objective three = new ObjectivePosition("Go to the woman in the red shirt", GameObject.Find("femaleNPC 1"));
+        objectives.Add(three);
+        Objective four = new ObjectivePosssession("Possess the woman in the red shirt", "femaleNPC 1");
+        objectives.Add(four);
     }
 	// Update is called once per frame
 	void Update () {
