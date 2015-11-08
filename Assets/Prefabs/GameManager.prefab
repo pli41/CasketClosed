@@ -42,15 +42,9 @@ MonoBehaviour:
   timerUI: {fileID: 0}
   blinkUI: {fileID: 0}
   mode: 0
-  posessionTime: 15
-  outOfBodyTime: 40
+  posessionTime: 20
+  outOfBodyTime: 20
   player: {fileID: 0}
-  scenes:
-  - Room_For_Wake
-  - gstache_forest
-  - tzhang_desert
-  - charvi_snow
-  - 
   flashSpeed: .100000001
 --- !u!1001 &100100000
 Prefab:

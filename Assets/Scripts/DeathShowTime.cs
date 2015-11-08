@@ -11,8 +11,5 @@ public class DeathShowTime : MonoBehaviour {
         GetComponent<Text>().text = time + " seconds";
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
