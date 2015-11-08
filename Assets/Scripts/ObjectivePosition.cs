@@ -3,16 +3,17 @@ using System.Collections;
 
 public class ObjectivePosition : Objective {
     private GameObject target;
-    
+    private GameObject player;
     public ObjectivePosition(string text, GameObject lookfor)
     {
         target = lookfor;
+        player = GameObject.FindGameObjectWithTag("Player");
         objectiveText = text;
     }
 	
-	// Update is called once per frame
-	void Update () {
-        float dist = (target.transform.position - transform.position).magnitude;
+
+	public override void Checked() {
+        float dist = (target.transform.position - player.transform.position).magnitude;
         if (dist < 1.5f) {
             accomplished = true;
         }

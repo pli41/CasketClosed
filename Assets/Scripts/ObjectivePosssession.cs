@@ -28,7 +28,7 @@ public class ObjectivePosssession : Objective {
         mode = MODE.ONETYPEOFTARGET;
     }
 	// Update is called once per frame
-	void Update () {
+	public override void Checked(){
         Possessible script;
         switch (mode)
         {

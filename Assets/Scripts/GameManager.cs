@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
     ArrayList objectives;
     private Text objectiveText;
+    private int currentObjective;
 	public enum MODE{text, image};
 	GameObject[] furniture;
 	public Text timerUI;
@@ -25,18 +26,27 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         objectiveText = GameObject.Find("ObjectiveText").GetComponent<Text>();
+        objectives = new ArrayList();
 		ghost = player.GetComponent<GhostScript> ();
 		wasPossessing = false;
 		currentPosTime = outOfBodyTime;
 		blinkTimer = 0;
         totalTime = 0;
 		furniture = GameObject.FindGameObjectsWithTag ("Chair");
+        makeObjectives();
+        currentObjective = 1;
 		
 	}
-	
+	private void makeObjectives()
+    {
+        Objective one = new ObjectivePosition("Go To the coffin", GameObject.Find("Coffin"));
+        objectiveText.text = one.getText();
+        objectives.Add(one);
+    }
 	// Update is called once per frame
 	void Update () {
         totalTime += Time.deltaTime;
+        checkObjective();
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
 			mode = MODE.text;
 		}
@@ -75,6 +85,23 @@ public class GameManager : MonoBehaviour {
 		blinkTimer += Time.deltaTime;
 
 	}
+
+    void checkObjective()
+    {
+        if (currentObjective <= objectives.Count)
+        {
+            Objective current = (Objective)objectives[currentObjective - 1];
+            objectiveText.text = current.getText();
+            current.Checked();
+            if (current.isAccomplished())
+            {
+                currentObjective += 1;
+                currentPosTime += current.bonus();
+            }
+        } else {
+            objectiveText.text = "No More Objectives";
+        }
+    }
 
 	void Reset(){
 		Debug.Log ("Resetting");
