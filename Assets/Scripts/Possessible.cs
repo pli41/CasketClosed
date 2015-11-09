@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Possessible : MonoBehaviour {
 	GameObject player;
-	bool possessable;
+	bool possessible;
 	public bool isPossessed = false;
 	int possDelay;
 	Animator anim;
@@ -13,14 +13,18 @@ public class Possessible : MonoBehaviour {
     Collider[] colliders;
 	public int ReviveTime;
 	int time;
+	public float animSpeed = 1.5f;
+	RuntimeAnimatorController controller;
+
 	// Use this for initialization
 	void Start () {
         ai = GetComponentInChildren<AIRig>();
 		possDelay = 0;
-		possessable = false;
+		possessible = false;
 		anim = GetComponent<Animator> ();
 		boneRig = gameObject.GetComponentsInChildren <Rigidbody>();
         colliders = gameObject.GetComponentsInChildren<Collider>();
+		controller = anim.runtimeAnimatorController;
        // Revive();
     }
 
@@ -28,22 +32,12 @@ public class Possessible : MonoBehaviour {
 		if (isPossessed) {
 			player.transform.position = transform.position;
 			player.transform.rotation = transform.rotation;
-			if (Input.GetAxisRaw ("Vertical") > 0) {
-				anim.SetFloat ("speed", 1.5f);
-			} else if (Input.GetAxisRaw ("Vertical") < 0) {
-				anim.SetFloat ("speed", -1f);
-			} else {
-				anim.SetFloat("speed", 0);
-			}
-			if (Input.GetAxisRaw ("Horizontal") > 0) {
-                anim.SetFloat("turn", 360f);
-			} else if (Input.GetAxisRaw("Horizontal") < 0)
-            {
-                anim.SetFloat("turn", -360f);
-            } else
-            {
-                anim.SetFloat("turn", 0f);
-            }
+			float h = Input.GetAxis ("Horizontal");	
+			float v = Input.GetAxis ("Vertical");	
+			anim.SetFloat ("Speed", v);					
+			anim.SetFloat ("Direction", h); 			
+			anim.speed = animSpeed;
+
 			possDelay += 1;
 		} else {
 			anim.SetInteger ("AnimState", 0);
@@ -55,7 +49,7 @@ public class Possessible : MonoBehaviour {
 		if (target.gameObject.tag.Equals ("Player")) {
 			Debug.Log ("player Enters");
 			player = target.gameObject;
-			possessable = true;
+			possessible = true;
 		}
 	}
 
@@ -64,8 +58,7 @@ public class Possessible : MonoBehaviour {
 	}
 
 	public void possess(){
-
-		if (possessable && !player.GetComponent<GhostScript>().poss) {
+		if (possessible && !player.GetComponent<GhostScript>().poss) {
             ai.enabled = false;
             anim.SetInteger("AnimState", 0);
 			player.gameObject.GetComponent<CapsuleCollider>().enabled = false;
@@ -76,6 +69,9 @@ public class Possessible : MonoBehaviour {
 			isPossessed = true;
 			player.GetComponent<GhostScript>().poss = true;
             gameObject.GetComponent<CapsuleCollider>().enabled = true;
+
+			// Update animator 
+			anim.runtimeAnimatorController = player.GetComponent<Animator>().runtimeAnimatorController;
 		}
 	}
 
@@ -96,6 +92,8 @@ public class Possessible : MonoBehaviour {
 			player.gameObject.GetComponent<Rigidbody> ().useGravity = true;
 			
             ai.enabled = true;
+
+			anim.runtimeAnimatorController = controller;
 		}
 	}
 
@@ -122,7 +120,7 @@ public class Possessible : MonoBehaviour {
 			ragbone.isKinematic = true;
 		}
 		GetComponent<Animator> ().enabled = true;
-		possessable = true;
+		possessible = true;
 	}
 
 }
