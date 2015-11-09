@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour {
 			if(mode == MODE.text){
 				timerUI.enabled = true;
 				blinkUI.enabled = false;
-				timerUI.text = "Time: " + currentPosTime;
+				timerUI.text = "Time: " + currentPosTime.ToString("F2");
 			}
 			else if(mode == MODE.image){
 				timerUI.text = "";

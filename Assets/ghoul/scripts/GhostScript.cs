@@ -10,7 +10,7 @@ public class GhostScript : MonoBehaviour
 	[System.NonSerialized]					
 	
 	public float animSpeed = 1.25f;				
-	public float lookSmoother = 3f;		
+	public float lookSmoother = 3f;
 	public bool poss;
 	public GameObject npc;
 	private Animator anim;							
@@ -39,7 +39,8 @@ public class GhostScript : MonoBehaviour
 			float v = Input.GetAxis ("Vertical");	
 			anim.SetFloat ("Speed", v);					
 			anim.SetFloat ("Direction", h); 			
-			anim.speed = animSpeed;				
+			anim.speed = animSpeed;
+
 			currentBaseState = anim.GetCurrentAnimatorStateInfo (0);	
 		}
 		if (currentBaseState.nameHash == locoState)
