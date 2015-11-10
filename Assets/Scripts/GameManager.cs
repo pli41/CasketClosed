@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
         objectiveText = GameObject.Find("ObjectiveText").GetComponent<Text>();
         objectives = new ArrayList();
 		ghost = player.GetComponent<GhostScript> ();
+      
 		wasPossessing = false;
 		currentPosTime = outOfBodyTime;
 		blinkTimer = 0;
