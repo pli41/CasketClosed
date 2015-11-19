@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ghoul1
-  m_Shader: {fileID: 4800000, guid: be6297508cba0f34980e7b5c07a1d6ba, type: 3}
+  m_Shader: {fileID: 4800000, guid: a40449fe6a1bc954e99719632f178a5b, type: 3}
   m_ShaderKeywords: _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2

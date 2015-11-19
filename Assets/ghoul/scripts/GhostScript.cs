@@ -15,8 +15,8 @@ public class GhostScript : MonoBehaviour
 	public GameObject npc;
 	private Animator anim;							
 	private AnimatorStateInfo currentBaseState;		
-	private CapsuleCollider col;			
-
+	private CapsuleCollider col;
+ 
 
 
 	static int idleState = Animator.StringToHash("Base Layer.Idle");	
@@ -25,7 +25,7 @@ public class GhostScript : MonoBehaviour
 	
 	void Start ()
 	{
-		
+      
 		anim = GetComponent<Animator>();					  
 		col = GetComponent<CapsuleCollider>();				
 
@@ -76,6 +76,7 @@ public class GhostScript : MonoBehaviour
 	void possess(){
 		if (poss) {
 			npc.GetComponent<Possessible> ().dePossess ();
+           
 		} else if (!poss && npc) {
 			Debug.Log("ask NPC to possess");
 			npc.GetComponent<Possessible> ().possess ();

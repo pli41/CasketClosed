@@ -23,8 +23,10 @@ public class GameManager : MonoBehaviour {
 	private float blinkTimer;
 	private float resetTimer;
 	bool wasPossessing;
+ 
 	// Use this for initialization
 	void Start () {
+       
         objectiveText = GameObject.Find("ObjectiveText").GetComponent<Text>();
         objectives = new ArrayList();
 		ghost = player.GetComponent<GhostScript> ();

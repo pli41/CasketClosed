@@ -15,9 +15,10 @@ public class Possessible : MonoBehaviour {
 	int time;
 	public float animSpeed = 1.5f;
 	RuntimeAnimatorController controller;
-
+    ParticleSystem poof;
 	// Use this for initialization
 	void Start () {
+        poof = GameObject.Find("ghoul").GetComponentInChildren<ParticleSystem>();
         ai = GetComponentInChildren<AIRig>();
 		possDelay = 0;
 		possessible = false;
@@ -92,7 +93,7 @@ public class Possessible : MonoBehaviour {
 			player.gameObject.GetComponent<Rigidbody> ().useGravity = true;
 			
             ai.enabled = true;
-
+            poof.Play();
 			anim.runtimeAnimatorController = controller;
 		}
 	}
