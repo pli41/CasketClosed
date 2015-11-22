@@ -43,16 +43,6 @@ public class GhostScript : MonoBehaviour
 
 			currentBaseState = anim.GetCurrentAnimatorStateInfo (0);	
 		}
-		if (currentBaseState.nameHash == locoState)
-		{
-			/*
-			if(Input.GetKeyDown(KeyCode.Space))
-			{
-				anim.SetTrigger("Possess");
-				possess ();
-			}
-			*/
-		}
 		if(Input.GetKeyDown(KeyCode.Space))
 		{
 			anim.SetTrigger("Possess");

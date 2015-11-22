@@ -11,6 +11,7 @@ TagManager:
   - Grate
   - Stairs
   - Casket
+  - Death
   layers:
   - Default
   - TransparentFX
