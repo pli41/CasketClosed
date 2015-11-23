@@ -5,6 +5,7 @@ using System.Collections;
 public class ButtonScript : MonoBehaviour {
     public Image panel;
     public Color panelColor;
+    private string scene;
 	// Use this for initialization
     void Start()
     {
@@ -15,7 +16,7 @@ public class ButtonScript : MonoBehaviour {
     {
         if (panel.color.a >= 1)
         {
-            Application.LoadLevel("Room_for_Wake");
+            Application.LoadLevel(scene);
         }
         if (panel.enabled)
         {
@@ -26,8 +27,9 @@ public class ButtonScript : MonoBehaviour {
         }
        
     }
-    public void OnClick()
+    public void OnClick(string scene)
     {
+        this.scene = scene;
         panel.enabled = true;
         
        
