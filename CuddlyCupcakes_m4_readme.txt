@@ -1,9 +1,17 @@
 Cuddly Cupcakes
-- Garrett Stache
-- Tiffany Zhang
-- Charvi Argawal
-- Sahsa Azad
-- Peilin Li
+- Garrett Stache    gstache3 gstache3@gatech.edu
+	
+- Tiffany Zhang   tzhang76
+ tzhang76@mail.gatech.edu
+- Charvi Argawal   cagarwal9
+  charvi@gatech.edu
+
+- Sahsa Azad   sazad6
+  sasha.azad@gatech.edu
+
+- Peilin Li   pli41
+  lipeilin@gatech.edu
+2
 
 UI Style:
 - We have a main menu and a death screen that implement similar UI functions, allowing the player to enter the funeral and see the credits. In both, the camera orbits the funeral parlor while the "Adam's Family" theme song plays. The UI elements draw from the gothic theme of the show, with a semi-ornate panel behind the main text, and coffin-shaped buttons below. The font is also playfully spooky, and used in all UI panels throughout the game. The buttons highlight a ghoulish green when hovered over with the mouse, or scrolled to with the arrow keys. For now, use up arrow, down arrow and return to navigate the buttons, or use the mouse.
@@ -27,3 +35,12 @@ Chairs: Ka Designs, http://u3d.as/5Fs
 Flowers: Game Asset Studio, http://u3d.as/5zY
 Other Characters made with Make Human
 Music: Adams Family theme, Adams Family Overture; Warner Brothers
+
+first Scene to open in Unity:
+StartScreen
+
+Controls to test:
+Use WASD to move, space to possess. Possess and de-possess a character to test particle system 1, then look for the large semi-transparent black character to view particle system 2. Use the arrow keys to scroll through the menu buttons, or use the mouse.
+
+Prism URL:
+www.prism.gatech.edu/~gstache3/Milestone4/Milestone4.html
