@@ -21,22 +21,30 @@ public class CameraFollow : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		CamTranslate ();
 		CamRotate ();
 	}
 	
 	void CamRotate(){
+
 		Vector3 targetDir = FindTargetCameraDirection (player);
 		targetDir.Set (targetDir.x, 0f+verticalAngle, targetDir.z);
-		float step = rotateSpeed * Time.deltaTime;
-		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
-		transform.rotation = Quaternion.LookRotation(newDir);
+		//if(Vector3.Angle(targetDir, transform.forward) > 8f){
+			float step = rotateSpeed * Time.deltaTime;
+			Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+			transform.rotation = Quaternion.LookRotation(newDir);
+		//}
 	}
 	
 	void CamTranslate(){
-		float step = translateSpeed * Time.deltaTime;
-		transform.position = Vector3.MoveTowards(FindTargetCameraPoint(player), transform.position, step);
+
+		Vector3 targetPos = FindTargetCameraPoint (player);
+		//if(Vector3.Distance(targetPos, transform.position) > 1f){
+			float step = translateSpeed * Time.deltaTime;
+			transform.position = Vector3.MoveTowards(targetPos, transform.position, step);
+		//}
+
 	}
 	
 	

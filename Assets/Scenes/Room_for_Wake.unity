@@ -532,8 +532,8 @@ MonoBehaviour:
   verticalAngle: -.200000003
   camera_OffsetForward: 1
   camera_OffsetUpward: 1.89999998
-  rotateSpeed: 1.60000002
-  translateSpeed: 1
+  rotateSpeed: 20
+  translateSpeed: 20
 --- !u!1001 &305891798
 Prefab:
   m_ObjectHideFlags: 0
@@ -887,6 +887,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1687893983}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: outOfBodyTime
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
   m_IsPrefabParent: 0
@@ -10684,8 +10688,8 @@ GameObject:
   - 95: {fileID: 1687893988}
   - 54: {fileID: 1687893987}
   - 136: {fileID: 1687893986}
-  - 114: {fileID: 1687893985}
   - 65: {fileID: 1687893984}
+  - 114: {fileID: 1687893985}
   m_Layer: 0
   m_Name: ghoul
   m_TagString: Player
@@ -10709,18 +10713,18 @@ BoxCollider:
 --- !u!114 &1687893985
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11462346, guid: ba57b945d2448eb4b8e263e034660c20,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1687893983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da76cd2c9125aff48a6e13be8f0e5a62, type: 3}
+  m_Script: {fileID: 11500000, guid: 9aa8b2298dfa348ab956d448111f60e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lookSmoother: 3
   poss: 0
   npc: {fileID: 0}
+  rotationSpeed: 40
 --- !u!136 &1687893986
 CapsuleCollider:
   m_ObjectHideFlags: 0
