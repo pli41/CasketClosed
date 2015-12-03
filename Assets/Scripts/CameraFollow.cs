@@ -5,7 +5,7 @@ using System.Collections;
 public class CameraFollow : MonoBehaviour {
 	
 	public Transform player;
-	
+	public float damping = 6.0f;
 	public float verticalAngle;
 	
 	public float camera_OffsetForward;
@@ -31,9 +31,11 @@ public class CameraFollow : MonoBehaviour {
 		Vector3 targetDir = FindTargetCameraDirection (player);
 		targetDir.Set (targetDir.x, 0f+verticalAngle, targetDir.z);
 		//if(Vector3.Angle(targetDir, transform.forward) > 8f){
-			float step = rotateSpeed * Time.deltaTime;
-			Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
-			transform.rotation = Quaternion.LookRotation(newDir);
+		float step = rotateSpeed * Time.deltaTime;
+		//Quaternion newRotation = Quaternion.Euler (targetDir);
+		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+		transform.rotation = Quaternion.LookRotation(newDir);
+		//transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * damping);
 		//}
 	}
 	

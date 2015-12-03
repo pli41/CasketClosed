@@ -6,6 +6,7 @@ public class Possessible : MonoBehaviour {
 	GameObject player;
 	bool possessible;
 	public bool isPossessed = false;
+	public float rotationSpeed;
 	int possDelay;
 	Animator anim;
     public AIRig ai;
@@ -35,8 +36,12 @@ public class Possessible : MonoBehaviour {
 			player.transform.rotation = transform.rotation;
 			float h = Input.GetAxis ("Horizontal");	
 			float v = Input.GetAxis ("Vertical");	
-			anim.SetFloat ("Speed", v);					
-			anim.SetFloat ("Direction", h); 			
+			anim.SetFloat ("Speed", v);
+			if (v > 0 || v < 0){
+			   anim.SetFloat ("Direction", h*360);
+			} else {
+				transform.Rotate(Vector3.up, h * rotationSpeed * Time.deltaTime);
+			}
 			anim.speed = animSpeed;
 
 			possDelay += 1;
