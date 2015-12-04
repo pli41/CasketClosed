@@ -1,11 +1,10 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
 	
 	public Transform player;
-	public float damping = 6.0f;
+	public float damping = 20.0f;
 	public float verticalAngle;
 	
 	public float camera_OffsetForward;
@@ -27,26 +26,26 @@ public class CameraFollow : MonoBehaviour {
 	}
 	
 	void CamRotate(){
-
+		
 		Vector3 targetDir = FindTargetCameraDirection (player);
 		targetDir.Set (targetDir.x, 0f+verticalAngle, targetDir.z);
 		//if(Vector3.Angle(targetDir, transform.forward) > 8f){
-		float step = rotateSpeed * Time.deltaTime;
-		//Quaternion newRotation = Quaternion.Euler (targetDir);
-		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
-		transform.rotation = Quaternion.LookRotation(newDir);
-		//transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * damping);
+		//float step = rotateSpeed * Time.deltaTime;
+		Quaternion newRotation = Quaternion.LookRotation(targetDir);;
+		//Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+		//transform.rotation = Quaternion.LookRotation(newDir);
+		transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * damping);
 		//}
 	}
 	
 	void CamTranslate(){
-
+		
 		Vector3 targetPos = FindTargetCameraPoint (player);
 		//if(Vector3.Distance(targetPos, transform.position) > 1f){
-			float step = translateSpeed * Time.deltaTime;
-			transform.position = Vector3.MoveTowards(targetPos, transform.position, step);
+		float step = translateSpeed * Time.deltaTime;
+		transform.position = Vector3.Lerp(targetPos, transform.position, 0.1f);
 		//}
-
+		
 	}
 	
 	
@@ -60,5 +59,4 @@ public class CameraFollow : MonoBehaviour {
 		Vector3 direction = player.position - transform.position;
 		return direction;
 	}
-	
 }
