@@ -43,7 +43,7 @@ public class CameraFollow : MonoBehaviour {
 		Vector3 targetPos = FindTargetCameraPoint (player);
 		//if(Vector3.Distance(targetPos, transform.position) > 1f){
 		float step = translateSpeed * Time.deltaTime;
-		transform.position = Vector3.Lerp(targetPos, transform.position, 0.1f);
+		transform.position = Vector3.Lerp(targetPos, transform.position, 0.05f);
 		//}
 		
 	}
