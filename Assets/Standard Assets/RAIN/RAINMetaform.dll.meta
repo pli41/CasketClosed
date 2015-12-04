@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0fa37be5d47440c4134a27c6a299504175efbf2cd5e92cf569ccb398c3fd10d
-size 477
+fileFormatVersion: 2
+guid: 5bc78d78affecc842b484b4468aea86a
+labels:
+- AI
+- Scripting
+- FPS
+- RPG
+- Behavior
+- Pathfinding
+- BehaviorTrees
+- Sensors
+- Mecanim
+- Animation
+- Motion
+- RAIN
+PluginImporter:
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder: {}
+  isPreloaded: 0
+  platformData:
+    Any:
+      enabled: 1
+      settings: {}
+    Editor:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
