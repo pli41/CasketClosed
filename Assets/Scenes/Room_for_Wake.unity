@@ -4056,10 +4056,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .360000014
-  m_Height: 1.77999997
+  m_Radius: .239999995
+  m_Height: 1.67999995
   m_Direction: 1
-  m_Center: {x: 0, y: .910000026, z: 0}
+  m_Center: {x: -.0700000003, y: .910000026, z: .0599999987}
 --- !u!1001 &984427836
 Prefab:
   m_ObjectHideFlags: 0
@@ -6296,12 +6296,12 @@ MonoBehaviour:
       id="_connections" elementtype="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
       /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint" refcount="1"
       id="1"><field type="RAIN.Navigation.Waypoints.WaypointSet" reference="0" id="_waypointSet"
-      /><field value="" type="System.String" id="_waypointName" /><field value="-3.365538,0,-1.472424"
+      /><field value="" type="System.String" id="_waypointName" /><field value="-3.365538,0,6.755738"
       type="UnityEngine.Vector3" id="_position" /><field value="0.5" type="System.Single"
       id="_range" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
       refcount="1" id="2"><field type="RAIN.Navigation.Waypoints.WaypointSet" reference="0"
       id="_waypointSet" /><field value="" type="System.String" id="_waypointName"
-      /><field value="12.63718,0,-1.494825" type="UnityEngine.Vector3" id="_position"
+      /><field value="-0.3536119,0,6.097182" type="UnityEngine.Vector3" id="_position"
       /><field value="0.5" type="System.Single" id="_range" /></reference><reference
       type="RAIN.Navigation.Waypoints.Waypoint" refcount="1" id="3"><field type="RAIN.Navigation.Waypoints.WaypointSet"
       reference="0" id="_waypointSet" /><field value="" type="System.String" id="_waypointName"
@@ -6313,7 +6313,7 @@ MonoBehaviour:
       /><field value="0.5" type="System.Single" id="_range" /></reference><reference
       type="RAIN.Navigation.Waypoints.Waypoint" refcount="1" id="5"><field type="RAIN.Navigation.Waypoints.WaypointSet"
       reference="0" id="_waypointSet" /><field value="" type="System.String" id="_waypointName"
-      /><field value="-3.570652,0,-1.564225" type="UnityEngine.Vector3" id="_position"
+      /><field value="-3.570652,0,6.939668" type="UnityEngine.Vector3" id="_position"
       /><field value="0.5" type="System.Single" id="_range" /></reference></references></component>
     _serializedGameObjects:
     - {fileID: 1337542511}
@@ -8851,6 +8851,25 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &1663450912 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 125534, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
+  m_PrefabInternal: {fileID: 1393204850}
+--- !u!54 &1663450913
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1663450912}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1678198213
 GameObject:
   m_ObjectHideFlags: 0
@@ -10765,6 +10784,79 @@ MonoBehaviour:
     _serializedGameObjects:
     - {fileID: 1762530390}
     _serializedCustomData: []
+--- !u!1 &1769126848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1769126852}
+  - 33: {fileID: 1769126851}
+  - 23: {fileID: 1769126850}
+  - 65: {fileID: 1769126849}
+  m_Layer: 0
+  m_Name: HeavenDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1769126849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769126848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: .289999992}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1769126850
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769126848}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 76c745e67d1b7244c8b318eb98cd6b6e, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1769126851
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769126848}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1769126852
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769126848}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: -4.96999979, y: 1.39999998, z: -11.8400002}
+  m_LocalScale: {x: 1, y: 1.97000003, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &1779322749
 GameObject:
   m_ObjectHideFlags: 0
@@ -11787,6 +11879,8 @@ GameObject:
   - 23: {fileID: 2132608332}
   - 114: {fileID: 2132608336}
   - 95: {fileID: 2132608335}
+  - 54: {fileID: 2132608338}
+  - 59: {fileID: 2132608337}
   m_Layer: 9
   m_Name: Hinge
   m_TagString: Door
@@ -11878,6 +11972,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e8f2a866702804f804c155dabeabe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!59 &2132608337
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132608330}
+  m_ConnectedBody: {fileID: 1663450913}
+  m_Anchor: {x: 0, y: .500000954, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -.0109386453, y: -.286281109, z: .505164802}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 0
+  m_Limits:
+    min: 0
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: .200000003
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+--- !u!54 &2132608338
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132608330}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2135141632 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: f53ba428acbc8c240b51c227ff0304b6, type: 3}

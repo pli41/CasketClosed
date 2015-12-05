@@ -13,13 +13,10 @@ public class BasicDoorScript : MonoBehaviour {
 	
 	}
 
-//	void OnTriggerEnter(Collider target) {
-//		if (target.tag.Equals("NPC")){
-//			anim.SetInteger("state", 1);
-//		}
-//	}
-//
-//	void openNew(){
-//		Application.LoadLevel ("room_for_wake");
-//	}
+    	void OnTriggerEnter(Collider target) {
+    	if (target.tag.Equals("NPC")){
+    		anim.SetInteger("state", 1);
+    		}
+}
+
 }
