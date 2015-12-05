@@ -464,8 +464,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 276496072}
-  m_LocalRotation: {x: -.990550518, y: 0, z: 0, w: -.137148499}
-  m_LocalPosition: {x: 3.54999995, y: 1.88999999, z: 8.06999969}
+  m_LocalRotation: {x: -.028505791, y: .0529919788, z: .0277663916, w: .997801721}
+  m_LocalPosition: {x: 7.30299997, y: 2.73300004, z: -.699999988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -488,6 +488,12 @@ MonoBehaviour:
   camera_OffsetUpward: 1.89999998
   rotateSpeed: 20
   translateSpeed: 20
+  freeCam_horizontalRange: 220
+  freeCam_verticalRange: 120
+  freeCam_initialAngle: {x: 0, y: 0, z: 0}
+  freeCam_initialized: 0
+  freeCam_MouseInitialPos: {x: 0, y: 0, z: 0}
+  freeCamera: 0
 --- !u!1001 &305891798
 Prefab:
   m_ObjectHideFlags: 0
@@ -10046,6 +10052,7 @@ MonoBehaviour:
   poss: 0
   npc: {fileID: 0}
   rotationSpeed: 100
+  cameraFollow: {fileID: 276496078}
 --- !u!136 &1687893986
 CapsuleCollider:
   m_ObjectHideFlags: 0

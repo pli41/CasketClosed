@@ -14,6 +14,8 @@ public class GhostScript : MonoBehaviour
 	public bool poss;
 	public GameObject npc;
 	public float rotationSpeed;
+    public CameraFollow cameraFollow;
+
 	private Animator anim;							
 	private AnimatorStateInfo currentBaseState;		
 	private CapsuleCollider col;
@@ -35,25 +37,32 @@ public class GhostScript : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		if (!poss) {
-			float h = Input.GetAxis ("Horizontal");	
-			float v = Input.GetAxis ("Vertical");	
-			anim.SetFloat ("Speed", v);					
-			anim.SetFloat ("Direction", h); 			
-			anim.speed = animSpeed;
+        if (!cameraFollow.freeCamera)
+        {
+            if (!poss)
+            {
+                float h = Input.GetAxis("Horizontal");
+                float v = Input.GetAxis("Vertical");
+                anim.SetFloat("Speed", v);
+                anim.SetFloat("Direction", h);
+                anim.speed = animSpeed;
 
-			if((h > 0.1f || h < -0.1f) && anim.GetCurrentAnimatorStateInfo(0).IsName("Idle")){
-				Debug.Log("Turning while standing still");
-				transform.Rotate(Vector3.up, h * rotationSpeed * Time.deltaTime);
-			}
+                if ((h > 0.1f || h < -0.1f) && anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+                {
+                    Debug.Log("Turning while standing still");
+                    transform.Rotate(Vector3.up, h * rotationSpeed * Time.deltaTime);
+                }
 
-			currentBaseState = anim.GetCurrentAnimatorStateInfo (0);	
-		}
-		if(Input.GetKeyDown(KeyCode.Space))
-		{
-			anim.SetTrigger("Possess");
-			possess ();
-		}
+                currentBaseState = anim.GetCurrentAnimatorStateInfo(0);
+            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                anim.SetTrigger("Possess");
+                possess();
+            }
+
+        }
+		
 	}
 
 	void OnTriggerEnter(Collider target){
