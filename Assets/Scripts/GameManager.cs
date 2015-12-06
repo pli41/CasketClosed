@@ -26,7 +26,8 @@ public class GameManager : MonoBehaviour {
 	private float blinkTimer;
 	private float resetTimer;
 	bool wasPossessing;
-
+	AudioSource totemsound;
+	AudioSource heaven;
 	public int defaultTextFlashTime = 100;
 	public Text textFlashUI;
 	int textFlashTimer = 0;
@@ -37,6 +38,8 @@ public class GameManager : MonoBehaviour {
  
 	// Use this for initialization
 	void Start () {
+		totemsound = GameObject.Find("Totem").GetComponent<AudioSource>();
+		heaven = GameObject.Find("HeavenDoor").GetComponent<AudioSource>();
         deathIsOut = false;
         objectiveText = GameObject.Find("ObjectiveText").GetComponent<Text>();
         objectives = new ArrayList();
@@ -61,6 +64,7 @@ public class GameManager : MonoBehaviour {
 		if (totems.ContainsKey (totem.transform.name) && totems [totem.transform.name] == false) {
 			totems[totem.transform.name] = true; 
 			totemsCollected++;
+			totemsound.Play();
 			flashText(totemsCollected + "/" + totems.Count + " totems collected! ");
 		}
 	}
@@ -106,6 +110,11 @@ public class GameManager : MonoBehaviour {
             deathIsOut = true;
         }
         checkObjective();
+
+		if ((objectiveText.text == "No More Objectives")&&(totemsCollected==3)){
+			heaven.Play();
+		}
+
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
 			mode = MODE.text;
 		}
