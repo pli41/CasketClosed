@@ -17,10 +17,14 @@ public class GhostScript : MonoBehaviour
     public CameraFollow cameraFollow;
 	public GameManager gameManager;
 
+	bool paused = false;
+
+	private Rigidbody rigidbody;
 	private Animator anim;							
 	private AnimatorStateInfo currentBaseState;		
 	private CapsuleCollider col;
- 
+	private RigidbodyConstraints oldConstraints;
+ 	
 
 
 	static int idleState = Animator.StringToHash("Base Layer.Idle");	
@@ -29,15 +33,29 @@ public class GhostScript : MonoBehaviour
 	
 	void Start ()
 	{
-      
+		rigidbody = GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator>();					  
 		col = GetComponent<CapsuleCollider>();				
 
 	}
 
+	public void Pause() {
+		paused = true;
+		oldConstraints = rigidbody.constraints;
+		rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+	}
+
+	public void Unpause() {
+		paused = false;
+		rigidbody.constraints = oldConstraints;
+	}
+
 
 	void FixedUpdate ()
 	{
+		if (paused)
+			return;
+
         if (!cameraFollow.freeCamera)
         {
             if (!poss)

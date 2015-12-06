@@ -229,10 +229,14 @@ public class GameManager : MonoBehaviour {
 	private float blinkTimer;
 	private float resetTimer;
 	bool wasPossessing;
+	bool paused = false;
+
+	public int timeTillDeath = 30;
 
 	public AudioClip goToHeaven;
 	public int defaultTextFlashTime = 100;
 	public Text textFlashUI;
+
 	int textFlashTimer = 0;
 	Queue<KeyValuePair<string, int>> flashedText = new Queue<KeyValuePair<string, int>>();
 
@@ -255,6 +259,16 @@ public class GameManager : MonoBehaviour {
         currentObjective = 1;
 		flashText ("... Where am I? ");
 		flashText ("Huh, weird. Looks like I can move through objects. ");
+	}
+
+	public void PauseGame() {
+		paused = true;
+		ghost.Pause ();
+	}
+
+	public void UnpauseGame() {
+		paused = false;
+		ghost.Unpause();
 	}
 
 	public int getRemainingTotems() {
@@ -307,8 +321,11 @@ public class GameManager : MonoBehaviour {
 			textFlashTimer--;
 		}
 
+		if (paused)
+			return;
+
         totalTime += Time.deltaTime;
-        if (totalTime > 30 && !deathIsOut)
+        if (totalTime > timeTillDeath && !deathIsOut)
         {
             Instantiate(death);
             deathIsOut = true;
