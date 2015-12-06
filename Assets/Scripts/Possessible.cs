@@ -17,8 +17,10 @@ public class Possessible : MonoBehaviour {
 	public float animSpeed = 1.5f;
 	RuntimeAnimatorController controller;
     ParticleSystem poof;
+	AudioSource audio;
 	// Use this for initialization
 	void Start () {
+		audio = GetComponent<AudioSource> ();
         poof = GameObject.Find("ghoul").GetComponentInChildren<ParticleSystem>();
         ai = GetComponentInChildren<AIRig>();
 		possDelay = 0;
@@ -65,6 +67,7 @@ public class Possessible : MonoBehaviour {
 
 	public void possess(){
 		if (possessible && !player.GetComponent<GhostScript>().poss) {
+			audio.Play();
             ai.enabled = false;
             anim.SetInteger("AnimState", 0);
 			player.gameObject.GetComponent<CapsuleCollider>().enabled = false;

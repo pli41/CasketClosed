@@ -68,8 +68,7 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-  m_LightmapSnapshot: {fileID: 112000001, guid: 538dcf29fc13d48778c2d6cb4261f271,
-    type: 2}
+  m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
 NavMeshSettings:
@@ -88,6 +87,7 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &20113995
 Prefab:
   m_ObjectHideFlags: 0
@@ -11151,3 +11151,5 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .400000006, y: .50999999, z: 1.25999999}
   m_Center: {x: 0, y: -.0299999993, z: -.0599999987}
+=======
+>>>>>>> a976ca3e268049dbf5155204b55f741b36802ae0
