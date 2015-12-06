@@ -3,11 +3,9 @@ using System.Collections;
 
 public class BasicDoorScript : MonoBehaviour {
 	Animator anim;
-	AudioSource dooropen;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
-		dooropen = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -18,7 +16,6 @@ public class BasicDoorScript : MonoBehaviour {
     	void OnTriggerEnter(Collider target) {
     	if (target.tag.Equals("NPC")){
     		anim.SetInteger("state", 1);
-			dooropen.Play();
     		}
 }
 
