@@ -38,6 +38,10 @@ Bolt: https://www.assetstore.unity3d.com/en/#!/content/2763
 Teddy Bear: https://www.assetstore.unity3d.com/en/#!/content/39976
 Other Characters made with Make Human
 Music: Adams Family theme, Adams Family Overture; Warner Brothers
+Misc Sound Effects
+* Ding: http://www.freesound.org/people/suzenako/sounds/320905/
+* Ding 2: http://www.freesound.org/people/adcbicycle/sounds/13952/
+* Evil Laugh: http://www.freesound.org/people/timtube/sounds/169826/
 
 first Scene to open in Unity:
 StartScreen

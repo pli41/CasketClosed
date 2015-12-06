@@ -12,6 +12,8 @@ TagManager:
   - Stairs
   - Casket
   - Death
+  - Totem
+  - HeavenDoor
   layers:
   - Default
   - TransparentFX

@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour {
 	private float resetTimer;
 	bool wasPossessing;
 
+	public AudioClip goToHeaven;
 	public int defaultTextFlashTime = 100;
 	public Text textFlashUI;
 	int textFlashTimer = 0;
@@ -53,13 +54,17 @@ public class GameManager : MonoBehaviour {
 		flashText ("Huh, weird. Looks like I can move through objects. ");
 	}
 
+	public int getRemainingTotems() {
+		return totems.Count - totemsCollected;
+	}
+
 	public void addTotem(string name) {
 		totems.Add (name, false);
 	}
 
-	public void getTotem(GameObject totem) {
-		if (totems.ContainsKey (totem.transform.name) && totems [totem.transform.name] == false) {
-			totems[totem.transform.name] = true; 
+	public void pickupTotem(string totem) {
+		if (totems.ContainsKey (totem) && totems [totem] == false) {
+			totems[totem] = true; 
 			totemsCollected++;
 			flashText(totemsCollected + "/" + totems.Count + " totems collected! ");
 		}
@@ -104,6 +109,7 @@ public class GameManager : MonoBehaviour {
         {
             Instantiate(death);
             deathIsOut = true;
+			flashText ("Brr! What was that? I feel like death is near...");
         }
         checkObjective();
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
@@ -161,6 +167,10 @@ public class GameManager : MonoBehaviour {
             objectiveText.text = "No More Objectives";
         }
     }
+
+	public void GoToHeaven () {
+		Application.LoadLevel ("Heaven");
+	}
 
 	void Reset(){
 		Debug.Log ("Resetting");
