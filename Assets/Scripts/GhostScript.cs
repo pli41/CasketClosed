@@ -15,6 +15,7 @@ public class GhostScript : MonoBehaviour
 	public GameObject npc;
 	public float rotationSpeed;
     public CameraFollow cameraFollow;
+	public GameManager gameManager;
 
 	private Animator anim;							
 	private AnimatorStateInfo currentBaseState;		
@@ -68,7 +69,19 @@ public class GhostScript : MonoBehaviour
 	void OnTriggerEnter(Collider target){
 		if (target.tag.Equals ("NPC") && !poss) {
 			npc = target.gameObject;
-		} 
+		} else if (target.tag.Equals ("Totem")) {
+			Debug.Log ("Picking up Totem");
+			target.GetComponent<TotemScript> ().Pickup (this);
+		} else if (target.tag.Equals ("HeavenDoor")) {
+			if (gameManager.getRemainingTotems() > 0) {
+				gameManager.flashText("I need " + gameManager.getRemainingTotems() + " more totems to get to heaven. ");
+			} else if (poss == true) {
+				gameManager.flashText("Hmm... Looks like I can't go to heaven in this body.");
+			} else {
+				gameManager.flashText("!", 200);
+				gameManager.GoToHeaven();
+			}
+		}
 
 	}
 	
@@ -81,7 +94,6 @@ public class GhostScript : MonoBehaviour
 	void possess(){
 		if (poss) {
 			npc.GetComponent<Possessible> ().dePossess ();
-           
 		} else if (!poss && npc) {
 			Debug.Log("ask NPC to possess");
 			npc.GetComponent<Possessible> ().possess ();
