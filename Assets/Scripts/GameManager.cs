@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
 	public Text timerUI;
 	public Image blinkUI;
 	public MODE mode;
-    private float totalTime;
+    public float totalTime;
 	private float currentPosTime;
 	public float posessionTime;
 	public float outOfBodyTime;
@@ -20,13 +20,15 @@ public class GameManager : MonoBehaviour {
 	private float timer;
 	private bool blinkRecover;
 	public float flashSpeed;
+    public GameObject death;
+    bool deathIsOut;
 	private float blinkTimer;
 	private float resetTimer;
 	bool wasPossessing;
  
 	// Use this for initialization
 	void Start () {
-       
+        deathIsOut = false;
         objectiveText = GameObject.Find("ObjectiveText").GetComponent<Text>();
         objectives = new ArrayList();
 		ghost = player.GetComponent<GhostScript> ();
@@ -55,6 +57,11 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         totalTime += Time.deltaTime;
+        if (totalTime > 30 && !deathIsOut)
+        {
+            Instantiate(death);
+            deathIsOut = true;
+        }
         checkObjective();
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
 			mode = MODE.text;
