@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
 
 	public int timeTillDeath = 30;
 
-	public AudioClip goToHeaven;
+	public AudioSource goToHeaven;
 	public int defaultTextFlashTime = 100;
 	public Text textFlashUI;
 
@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour {
 	void Start () {
         deathIsOut = false;
         objectiveText = GameObject.Find("ObjectiveText").GetComponent<Text>();
+		goToHeaven = GameObject.Find("HeavenDoor").GetComponent<AudioSource>();
         objectives = new ArrayList();
 		ghost = player.GetComponent<GhostScript> ();
       
@@ -129,6 +130,10 @@ public class GameManager : MonoBehaviour {
 			flashText ("Brr! What was that? I feel like death is near...");
         }
         checkObjective();
+		if ((objectiveText == "No More Objectives") && (totemsCollected == 3)) {
+			goToHeaven.Play();
+		}
+
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
 			mode = MODE.text;
 		}
