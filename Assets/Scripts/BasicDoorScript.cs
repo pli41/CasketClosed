@@ -13,10 +13,11 @@ public class BasicDoorScript : MonoBehaviour {
 	
 	}
 
-    	void OnTriggerEnter(Collider target) {
-    	if (target.tag.Equals("NPC")){
+	void OnTriggerEnter(Collider target) {
+		Debug.Log ("Trying to open door");
+		if (target.tag.Equals("NPC")){
     		anim.SetInteger("state", 1);
-    		}
-}
+		}
+	}
 
 }
