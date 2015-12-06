@@ -37,6 +37,9 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -65,7 +68,6 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 112000001, guid: 538dcf29fc13d48778c2d6cb4261f271,
     type: 2}
   m_RuntimeCPUUsage: 25
@@ -233,6 +235,62 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.87516737, y: 1.02000046, z: .790000677}
   m_Center: {x: -.000609057606, y: -1.51372706e-06, z: .394974917}
+--- !u!1001 &134567838
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1454808302}
+    m_Modifications:
+    - target: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.40999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -.957000017
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.671
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_Name
+      value: Teddy Totem
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+  m_IsPrefabParent: 0
+--- !u!114 &150827916 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d,
+    type: 2}
+  m_PrefabInternal: {fileID: 409250651}
+  m_Script: {fileID: 11500000, guid: 25b4319bda0074b08bac8c6ddf88aefd, type: 3}
 --- !u!1 &178522353
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +433,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 1
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -430,6 +487,11 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!224 &213275503 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22473198, guid: b3d49d87af032f54a93f41314f796769,
+    type: 2}
+  m_PrefabInternal: {fileID: 594481768}
 --- !u!4 &221042137 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 24367a1228cd240b2a726934e30c5f71, type: 3}
@@ -854,6 +916,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: totems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 470566, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 276
@@ -884,7 +950,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 470566, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
       propertyPath: timerUI
@@ -906,6 +972,26 @@ Prefab:
       propertyPath: death
       value: 
       objectReference: {fileID: 169512, guid: d04dc4bbbca313649b8b5c5704ed6ea8, type: 2}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: textFlashUI
+      value: 
+      objectReference: {fileID: 673288070}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: totems.Array.data[0]
+      value: Knife Totem
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: totems.Array.data[1]
+      value: Bolt Totem
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: totems.Array.data[2]
+      value: Bear Totem
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
+      propertyPath: defaultTextFlashTime
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d8b859b0efa82f419e1583a951d6a8d, type: 2}
   m_IsPrefabParent: 0
@@ -1575,7 +1661,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22473198, guid: b3d49d87af032f54a93f41314f796769, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 22473198, guid: b3d49d87af032f54a93f41314f796769, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1616,6 +1702,10 @@ Prefab:
     - target: {fileID: 22473198, guid: b3d49d87af032f54a93f41314f796769, type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258548, guid: b3d49d87af032f54a93f41314f796769, type: 2}
+      propertyPath: m_Volume
+      value: .0399999991
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3d49d87af032f54a93f41314f796769, type: 2}
@@ -1777,6 +1867,87 @@ MonoBehaviour:
       _stringData: Cg==
     - _data: 
       _stringData: Cg==
+--- !u!1 &673288068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 673288069}
+  - 222: {fileID: 673288071}
+  - 114: {fileID: 673288070}
+  - 114: {fileID: 673288072}
+  m_Layer: 5
+  m_Name: TextFlashUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &673288069
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673288068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 213275503}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -1.14439999e-05, y: 126.5}
+  m_SizeDelta: {x: 808.799988, y: 127.300003}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &673288070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673288068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6db0ec7e71aae354088e7dce26d05935, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Text Example. '
+--- !u!222 &673288071
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673288068}
+--- !u!114 &673288072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673288068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &698790968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,6 +2403,41 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &793567365 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+  m_PrefabInternal: {fileID: 1482776350}
+--- !u!4 &793567366 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+  m_PrefabInternal: {fileID: 1482776350}
+--- !u!114 &793567367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793567365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectedText: You've collected a totem.
+  lockedText: You must posess a human to pick up this totem!
+  gameManager: {fileID: 150827916}
+--- !u!136 &793567368
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793567365}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .191289887
+  m_Height: .0613641739
+  m_Direction: 1
+  m_Center: {x: -7.4505806e-09, y: -.00171072688, z: .12408717}
 --- !u!1 &793764457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,6 +5003,41 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24367a1228cd240b2a726934e30c5f71, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1253938780 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+  m_PrefabInternal: {fileID: 134567838}
+--- !u!4 &1253938781 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
+  m_PrefabInternal: {fileID: 134567838}
+--- !u!136 &1253938782
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253938780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .5, z: 0}
+--- !u!114 &1253938783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253938780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectedText: You've collected a totem.
+  lockedText: You must posess a human to pick up this totem!
+  gameManager: {fileID: 150827916}
 --- !u!1001 &1263444288
 Prefab:
   m_ObjectHideFlags: 0
@@ -4875,6 +5116,100 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_PrefabInternal: {fileID: 1263444288}
+--- !u!1001 &1316950847
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1454808302}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.20799994
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.90200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.08199978
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_Name
+      value: Bolt Totem
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1316950848 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+  m_PrefabInternal: {fileID: 1316950847}
+--- !u!1 &1316950849 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
+  m_PrefabInternal: {fileID: 1316950847}
+--- !u!114 &1316950850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316950849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectedText: You've collected a totem.
+  lockedText: You must posess a human to pick up this totem!
+  gameManager: {fileID: 150827916}
+--- !u!136 &1316950851
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316950849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .100000001
+  m_Height: .0100001795
+  m_Direction: 1
+  m_Center: {x: 2.98023224e-08, y: 0, z: -.0030171969}
 --- !u!1 &1337542509
 GameObject:
   m_ObjectHideFlags: 0
@@ -6344,7 +6679,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 466060, guid: 92cbf1f821c630241bb1ec4cd6309931, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92cbf1f821c630241bb1ec4cd6309931, type: 2}
@@ -6573,6 +6908,36 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: 0cd7a7c221fea2f449a3fe6027a20675, type: 3}
   m_PrefabInternal: {fileID: 1454681870}
+--- !u!1 &1454808301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1454808302}
+  m_Layer: 0
+  m_Name: Totem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454808302
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454808301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.44429874, y: .982733011, z: -5.65788937}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 793567366}
+  - {fileID: 1316950848}
+  - {fileID: 1253938781}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &1472813523
 GameObject:
   m_ObjectHideFlags: 0
@@ -6662,6 +7027,52 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!1001 &1482776350
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1454808302}
+    m_Modifications:
+    - target: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.15855885
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -.943761647
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: .201010704
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -2.02038092e-39
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 3.20339595e-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -6.12323426e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+      propertyPath: m_Name
+      value: Knife Totem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1001 &1493035368
 Prefab:
   m_ObjectHideFlags: 0

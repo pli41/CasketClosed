@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -25,6 +26,14 @@ public class GameManager : MonoBehaviour {
 	private float blinkTimer;
 	private float resetTimer;
 	bool wasPossessing;
+
+	public int defaultTextFlashTime = 100;
+	public Text textFlashUI;
+	int textFlashTimer = 0;
+	Queue<KeyValuePair<string, int>> flashedText = new Queue<KeyValuePair<string, int>>();
+
+	int totemsCollected = 0;
+	Dictionary<string, bool> totems = new Dictionary<string, bool>();
  
 	// Use this for initialization
 	void Start () {
@@ -40,8 +49,30 @@ public class GameManager : MonoBehaviour {
 		furniture = GameObject.FindGameObjectsWithTag ("Chair");
         makeObjectives();
         currentObjective = 1;
-		
+		flashText ("... Where am I? ");
+		flashText ("Huh, weird. Looks like I can move through objects. ");
 	}
+
+	public void addTotem(string name) {
+		totems.Add (name, false);
+	}
+
+	public void getTotem(GameObject totem) {
+		if (totems.ContainsKey (totem.transform.name) && totems [totem.transform.name] == false) {
+			totems[totem.transform.name] = true; 
+			totemsCollected++;
+			flashText(totemsCollected + "/" + totems.Count + " totems collected! ");
+		}
+	}
+
+	public void flashText(string text) {
+		flashText (text, defaultTextFlashTime);
+	}
+
+	public void flashText(string text, int time) {
+		flashedText.Enqueue (new KeyValuePair<string, int> (text, time));
+	}
+
 	private void makeObjectives()
     {
         Objective one = new ObjectivePosition("Go To the coffin", GameObject.Find("Coffin"));
@@ -56,6 +87,18 @@ public class GameManager : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
+		if (textFlashTimer <= 0) {
+			if (flashedText.Count == 0) {
+				textFlashUI.text = "";
+			} else {
+				KeyValuePair<string, int> text = flashedText.Dequeue();
+				textFlashUI.text = text.Key;
+				textFlashTimer = text.Value;
+			}
+		} else {
+			textFlashTimer--;
+		}
+
         totalTime += Time.deltaTime;
         if (totalTime > 30 && !deathIsOut)
         {

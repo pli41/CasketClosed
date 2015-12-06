@@ -33,6 +33,9 @@ Spider: [prism bucket], http://u3d.as/9ze
 Retro Lamps: Artur G, http://u3d.as/8qL
 Chairs: Ka Designs, http://u3d.as/5Fs
 Flowers: Game Asset Studio, http://u3d.as/5zY
+Knife: https://www.assetstore.unity3d.com/en/#!/content/4429
+Bolt: https://www.assetstore.unity3d.com/en/#!/content/2763
+Teddy Bear: https://www.assetstore.unity3d.com/en/#!/content/39976
 Other Characters made with Make Human
 Music: Adams Family theme, Adams Family Overture; Warner Brothers
 
