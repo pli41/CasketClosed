@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour {
 			flashText ("Brr! What was that? I feel like death is near...");
         }
         checkObjective();
-		if ((objectiveText == "No More Objectives") && (totemsCollected == 3)) {
+		if ((objectiveText.text == "No More Objectives") && (totemsCollected == 3)) {
 			goToHeaven.Play();
 		}
 
