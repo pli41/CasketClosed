@@ -832,18 +832,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &134567839
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 134567838}
-  m_GameObject: {fileID: 1278364856}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 876170273}
-  m_RootOrder: 1
 --- !u!114 &150827916 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d,
@@ -2728,35 +2716,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.22000003, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &425810554
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1482776350}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 425810555}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &425810555
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1482776350}
-  m_GameObject: {fileID: 425810554}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 793567366}
-  - {fileID: 1482776351}
-  m_Father: {fileID: 1454808302}
-  m_RootOrder: 0
 --- !u!1 &445276345
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,37 +5179,14 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &793567365
+--- !u!1 &793567365 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
   m_PrefabInternal: {fileID: 1482776350}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 793567366}
-  - 136: {fileID: 793567368}
-  - 108: {fileID: 793567372}
-  - 82: {fileID: 793567373}
-  - 114: {fileID: 793567367}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &793567366
+--- !u!4 &793567366 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
   m_PrefabInternal: {fileID: 1482776350}
-  m_GameObject: {fileID: 793567365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 425810555}
-  m_RootOrder: 0
 --- !u!114 &793567367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5262,6 +5198,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectedText: You've collected a totem.
+  lockedText: You must posess a human to pick up this totem!
+  gameManager: {fileID: 150827916}
+  pickupClip: {fileID: 0}
+  failClip: {fileID: 0}
 --- !u!136 &793567368
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7003,35 +6944,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &876170272
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 134567838}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 876170273}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &876170273
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 134567838}
-  m_GameObject: {fileID: 876170272}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1253938781}
-  - {fileID: 134567839}
-  m_Father: {fileID: 1454808302}
-  m_RootOrder: 2
 --- !u!1001 &902523756
 Prefab:
   m_ObjectHideFlags: 0
@@ -7176,21 +7088,6 @@ Transform:
   - {fileID: 2082455947}
   m_Father: {fileID: 862952083}
   m_RootOrder: 3
---- !u!1 &917169901
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1316950847}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1316950848}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &933063274
 Prefab:
   m_ObjectHideFlags: 0
@@ -8007,21 +7904,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b04321b155636443a6a93ccd15b0a01, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1153571766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1703271951}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1703271952}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1160693405 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: f53ba428acbc8c240b51c227ff0304b6, type: 3}
@@ -8734,37 +8616,14 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24367a1228cd240b2a726934e30c5f71, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &1253938780
+--- !u!1 &1253938780 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
   m_PrefabInternal: {fileID: 134567838}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1253938781}
-  - 136: {fileID: 1253938782}
-  - 108: {fileID: 1253938785}
-  - 82: {fileID: 1253938786}
-  - 114: {fileID: 1253938783}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1253938781
+--- !u!4 &1253938781 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
   m_PrefabInternal: {fileID: 134567838}
-  m_GameObject: {fileID: 1253938780}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 876170273}
-  m_RootOrder: 0
 --- !u!136 &1253938782
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8789,6 +8648,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectedText: You've collected a totem.
+  lockedText: You must posess a human to pick up this totem!
+  gameManager: {fileID: 150827916}
+  pickupClip: {fileID: 0}
+  failClip: {fileID: 0}
 --- !u!108 &1253938785
 Light:
   m_ObjectHideFlags: 0
@@ -9197,21 +9061,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1270459329}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1278364856
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 134567838}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 134567839}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &1316950847
 Prefab:
   m_ObjectHideFlags: 0
@@ -9275,37 +9124,10 @@ Prefab:
     - {fileID: 5400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1316950848
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1316950847}
-  m_GameObject: {fileID: 917169901}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2003972326}
-  m_RootOrder: 1
---- !u!1 &1316950849
+--- !u!1 &1316950849 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
   m_PrefabInternal: {fileID: 1316950847}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1316950852}
-  - 136: {fileID: 1316950851}
-  - 108: {fileID: 1316950855}
-  - 82: {fileID: 1316950856}
-  - 114: {fileID: 1316950850}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!114 &1316950850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9317,6 +9139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectedText: You've collected a totem.
+  lockedText: You must posess a human to pick up this totem!
+  gameManager: {fileID: 150827916}
+  pickupClip: {fileID: 0}
+  failClip: {fileID: 0}
 --- !u!136 &1316950851
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9330,18 +9157,10 @@ CapsuleCollider:
   m_Height: .0100001795
   m_Direction: 1
   m_Center: {x: 2.98023224e-08, y: 0, z: -.0030171969}
---- !u!4 &1316950852
+--- !u!4 &1316950852 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
   m_PrefabInternal: {fileID: 1316950847}
-  m_GameObject: {fileID: 1316950849}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2003972326}
-  m_RootOrder: 0
 --- !u!108 &1316950855
 Light:
   m_ObjectHideFlags: 0
@@ -11706,9 +11525,9 @@ Transform:
   m_LocalPosition: {x: 2.44429874, y: .982733011, z: -5.65788937}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 425810555}
-  - {fileID: 2003972326}
-  - {fileID: 876170273}
+  - {fileID: 793567366}
+  - {fileID: 1316950852}
+  - {fileID: 1253938781}
   m_Father: {fileID: 0}
   m_RootOrder: 13
 --- !u!1 &1472813523
@@ -11850,18 +11669,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1482776351
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1482776350}
-  m_GameObject: {fileID: 1750407982}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 425810555}
-  m_RootOrder: 1
 --- !u!1001 &1493035368
 Prefab:
   m_ObjectHideFlags: 0
@@ -11916,46 +11723,14 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 6fb03d4b89b0b48bb8a57bc05413c278, type: 2}
   m_PrefabInternal: {fileID: 1493035368}
---- !u!1 &1499881146
+--- !u!1 &1499881146 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 148464, guid: 877b975135b3cab47a18ada45ff5ec36, type: 2}
   m_PrefabInternal: {fileID: 1703271951}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1499881148}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1499881147
+--- !u!4 &1499881147 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 474902, guid: 877b975135b3cab47a18ada45ff5ec36, type: 2}
   m_PrefabInternal: {fileID: 1703271951}
-  m_GameObject: {fileID: 1549682975}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 949442471}
-  m_Father: {fileID: 1898962381}
-  m_RootOrder: 1
---- !u!4 &1499881148
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1703271951}
-  m_GameObject: {fileID: 1499881146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1898962381}
-  m_RootOrder: 0
 --- !u!1001 &1511381921
 Prefab:
   m_ObjectHideFlags: 0
@@ -12539,21 +12314,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95e66b35f2a90524684034d0a15fc10b, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1549682975
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1703271951}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1499881147}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &1550834586
 Prefab:
   m_ObjectHideFlags: 0
@@ -14284,18 +14044,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 877b975135b3cab47a18ada45ff5ec36, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1703271952
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1703271951}
-  m_GameObject: {fileID: 1153571766}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1898962381}
-  m_RootOrder: 2
 --- !u!1001 &1714653308
 Prefab:
   m_ObjectHideFlags: 0
@@ -14822,21 +14570,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: caab47fcd35786a4991e8727ed28fc62, type: 2}
   m_PrefabInternal: {fileID: 1749723958}
---- !u!1 &1750407982
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1482776350}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1482776351}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &1755137982
 Prefab:
   m_ObjectHideFlags: 0
@@ -15377,7 +15110,7 @@ Transform:
   - {fileID: 1714653309}
   - {fileID: 1988360327}
   - {fileID: 1445629156}
-  - {fileID: 1898962381}
+  - {fileID: 1499881147}
   - {fileID: 1226980168}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -16074,36 +15807,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: f53ba428acbc8c240b51c227ff0304b6, type: 3}
   m_PrefabInternal: {fileID: 1897630303}
---- !u!1 &1898962380
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1703271951}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1898962381}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: NPC
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1898962381
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1703271951}
-  m_GameObject: {fileID: 1898962380}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1499881148}
-  - {fileID: 1499881147}
-  - {fileID: 1703271952}
-  m_Father: {fileID: 1839548500}
-  m_RootOrder: 4
 --- !u!1001 &1909855621
 Prefab:
   m_ObjectHideFlags: 0
@@ -16517,35 +16220,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1558009651}
   m_RootOrder: 7
---- !u!1 &2003972325
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1316950847}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2003972326}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2003972326
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1316950847}
-  m_GameObject: {fileID: 2003972325}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1316950852}
-  - {fileID: 1316950848}
-  m_Father: {fileID: 1454808302}
-  m_RootOrder: 1
 --- !u!1001 &2006480991
 Prefab:
   m_ObjectHideFlags: 0
