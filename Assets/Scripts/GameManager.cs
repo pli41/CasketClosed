@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
 
 	public int timeTillDeath = 30;
 
-	public AudioSource goToHeaven;
+	public AudioClip goToHeaven;
 	public int defaultTextFlashTime = 100;
 	public Text textFlashUI;
 
@@ -44,7 +44,6 @@ public class GameManager : MonoBehaviour {
 	void Start () {
         deathIsOut = false;
         objectiveText = GameObject.Find("ObjectiveText").GetComponent<Text>();
-		goToHeaven = GameObject.Find("HeavenDoor").GetComponent<AudioSource>();
         objectives = new ArrayList();
 		ghost = player.GetComponent<GhostScript> ();
       
@@ -98,12 +97,25 @@ public class GameManager : MonoBehaviour {
         Objective one = new ObjectivePosition("Go To the coffin", GameObject.Find("Coffin"));
         objectiveText.text = one.getText();
         objectives.Add(one);
+     
+        Objective three = new ObjectivePosition("Go to the gold rectangle 'Heaven'", GameObject.Find("HeavenDoor"));
+        objectives.Add(three);
+       
+        Objective five = new ObjectivePosition("Go to the floating bolt. Also, why is a bolt floating?", GameObject.Find("Bolt Totem"));
+        objectives.Add(five);
         Objective two = new ObjectivePosssession("Possess the man in the purple shirt", "Man");
         objectives.Add(two);
-        Objective three = new ObjectivePosition("Go to the woman in the red shirt", GameObject.Find("femaleNPC 1"));
-        objectives.Add(three);
+       
+        Objective six = new ObjectivePosition("Go through the door into the hallway", GameObject.Find("Hallway"));
+        objectives.Add(six);
         Objective four = new ObjectivePosssession("Possess the woman in the red shirt", "femaleNPC 1");
         objectives.Add(four);
+        Objective seven = new ObjectivePosssession("possess the woman in the white shirt", "femaleNPC");
+        objectives.Add(seven);
+        Objective eight = new ObjectivePosition("Find the knife that was stabbed in your back", GameObject.Find("Knife Totem"));
+        objectives.Add(eight);
+        Objective nine = new ObjectivePosition("Go to the gold rectangle 'Heaven'", GameObject.Find("HeavenDoor"));
+        objectives.Add(nine);
     }
 	// Update is called once per frame
 	void Update () {
@@ -130,10 +142,6 @@ public class GameManager : MonoBehaviour {
 			flashText ("Brr! What was that? I feel like death is near...");
         }
         checkObjective();
-		if ((objectiveText.text == "No More Objectives") && (totemsCollected == 3)) {
-			goToHeaven.Play();
-		}
-
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
 			mode = MODE.text;
 		}

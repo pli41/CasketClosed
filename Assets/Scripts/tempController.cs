@@ -43,7 +43,7 @@ public class tempController : MonoBehaviour {
 			poss = !poss;
 		} else if (!poss && npc) {
 			Debug.Log("ask NPC to possess");
-			npc.GetComponent<Possessible> ().possess ();
+			npc.GetComponent<Possessible> ().possess (gameObject);
 
 			poss = !poss;
 		}

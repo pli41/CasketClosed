@@ -17,11 +17,9 @@ public class Possessible : MonoBehaviour {
 	public float animSpeed = 1.5f;
 	RuntimeAnimatorController controller;
     ParticleSystem poof;
-	AudioSource possessing;
 	// Use this for initialization
 	void Start () {
         poof = GameObject.Find("ghoul").GetComponentInChildren<ParticleSystem>();
-		possessing = GetComponent<AudioSource> ();
         ai = GetComponentInChildren<AIRig>();
 		possDelay = 0;
 		possessible = false;
@@ -39,9 +37,10 @@ public class Possessible : MonoBehaviour {
 			float h = Input.GetAxis ("Horizontal");	
 			float v = Input.GetAxis ("Vertical");	
 			anim.SetFloat ("Speed", v);
-			if (v > 0 || v < 0){
-			   anim.SetFloat ("Direction", h*360);
-			} else {
+			if (v > 0.1 || v < -0.1){
+			   anim.SetFloat ("Direction", h);
+                
+            } else {
 				transform.Rotate(Vector3.up, h * rotationSpeed * Time.deltaTime);
 			}
 			anim.speed = animSpeed;
@@ -52,20 +51,20 @@ public class Possessible : MonoBehaviour {
 		}
 	
 	}
-
+   
 	void OnTriggerEnter(Collider target){
 		if (target.gameObject.tag.Equals ("Player")) {
-			Debug.Log ("player Enters");
-			player = target.gameObject;
+			
 			possessible = true;
 		}
 	}
-
+ 
 	void OnTriggerExit(){
-		//possessable = false;
+		possessible = false;
 	}
 
-	public void possess(){
+	public void possess(GameObject target){
+        player = target;
 		if (possessible && !player.GetComponent<GhostScript>().poss) {
             ai.enabled = false;
             anim.SetInteger("AnimState", 0);
@@ -75,7 +74,6 @@ public class Possessible : MonoBehaviour {
 			//player.transform.SetParent (this.transform);
 			player.GetComponentInChildren<SkinnedMeshRenderer> ().enabled = false;
 			isPossessed = true;
-			possessing.Play();
 			player.GetComponent<GhostScript>().poss = true;
             gameObject.GetComponent<CapsuleCollider>().enabled = true;
 
@@ -102,7 +100,6 @@ public class Possessible : MonoBehaviour {
 			
             ai.enabled = true;
             poof.Play();
-			possessing.Play ();
 			anim.runtimeAnimatorController = controller;
 		}
 	}

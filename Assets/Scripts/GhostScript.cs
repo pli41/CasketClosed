@@ -70,6 +70,9 @@ public class GhostScript : MonoBehaviour
                 {
                     Debug.Log("Turning while standing still");
                     transform.Rotate(Vector3.up, h * rotationSpeed * Time.deltaTime);
+                } else
+                {
+                    
                 }
 
                 currentBaseState = anim.GetCurrentAnimatorStateInfo(0);
@@ -114,7 +117,7 @@ public class GhostScript : MonoBehaviour
 			npc.GetComponent<Possessible> ().dePossess ();
 		} else if (!poss && npc) {
 			Debug.Log("ask NPC to possess");
-			npc.GetComponent<Possessible> ().possess ();
+			npc.GetComponent<Possessible> ().possess (this.gameObject);
 
 		}
 	}

@@ -1,3 +1,28 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
-oid sha256:fc1df643f26c76317b2f47ba0fe74e8043aeebc943d36cd395a02ad58f356f7c
+oid sha256:84d8e372ccc2939eceb6a9176c1c14fa3ca7d68183bd8fcb45a73f8a268ec3aa
 size 661
+=======
+fileFormatVersion: 2
+guid: bc99b384c516b4d01a5aad9e3327f651
+timeCreated: 1449389652
+licenseType: Free
+AudioImporter:
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> a976ca3e268049dbf5155204b55f741b36802ae0
