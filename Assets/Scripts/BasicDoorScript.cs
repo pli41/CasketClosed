@@ -24,4 +24,12 @@ public class BasicDoorScript : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerExit(Collider target){
+		if (target.tag.Equals ("NPC")) {
+			anim.SetInteger("state", 0);
+			dooropen.Play();
+		}
+	
+	}
+
 }

@@ -37,9 +37,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -68,6 +65,7 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
+    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 112000001, guid: 538dcf29fc13d48778c2d6cb4261f271,
     type: 2}
   m_RuntimeCPUUsage: 25
@@ -593,6 +591,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400016, guid: 4be90c5d9ce40a648bb37474c93d9c02, type: 3}
   m_PrefabInternal: {fileID: 96957815}
+--- !u!1 &105144474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1316950847}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1316950848}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &107801291
 Prefab:
   m_ObjectHideFlags: 0
@@ -834,6 +847,20 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &134567839
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 134567838}
+  m_GameObject: {fileID: 911250609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1253938784}
+  - {fileID: 1253938781}
+  m_Father: {fileID: 1454808302}
+  m_RootOrder: 2
 --- !u!114 &150827916 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11457618, guid: 6d8b859b0efa82f419e1583a951d6a8d,
@@ -977,7 +1004,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -1081,7 +1110,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -1133,6 +1164,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 1
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -1358,6 +1390,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: ea65a302fdcb31f4a85e3a7fbbb82db0, type: 3}
   m_PrefabInternal: {fileID: 254038515}
+--- !u!1 &267451663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1703271951}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1499881147}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &275592217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +1830,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -1966,7 +2014,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -2006,6 +2056,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -2335,6 +2386,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8253672, guid: 6fcb5ef893bac4b90bc88b0302134cc0, type: 2}
+      propertyPath: MinDistance
+      value: .980108261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253672, guid: 6fcb5ef893bac4b90bc88b0302134cc0, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fcb5ef893bac4b90bc88b0302134cc0, type: 2}
   m_IsPrefabParent: 0
@@ -2462,14 +2521,15 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7aa977b4145664a839c434f80e0c4d56, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: .980108261
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -2552,7 +2612,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -2597,7 +2659,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -2841,7 +2905,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -3178,6 +3244,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -4155,6 +4222,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6db0ec7e71aae354088e7dce26d05935, type: 3}
     m_FontSize: 30
@@ -4317,7 +4390,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -4357,6 +4432,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -4568,6 +4644,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2006480992}
   m_RootOrder: 2
+--- !u!1 &723036176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1482776350}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 793567366}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &726962946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4697,7 +4788,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -4737,6 +4830,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -5365,14 +5459,37 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &793567365 stripped
+--- !u!1 &793567365
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
   m_PrefabInternal: {fileID: 1482776350}
---- !u!4 &793567366 stripped
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 793567369}
+  - 136: {fileID: 793567368}
+  - 108: {fileID: 793567372}
+  - 82: {fileID: 793567373}
+  - 114: {fileID: 793567367}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &793567366
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
   m_PrefabInternal: {fileID: 1482776350}
+  m_GameObject: {fileID: 723036176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1482776351}
+  m_RootOrder: 1
 --- !u!114 &793567367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5384,11 +5501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedText: 'Woah. Why is there a knife in a church? '
-  lockedText: You must posess a human to pick up this totem!
-  gameManager: {fileID: 150827916}
-  pickupClip: {fileID: 8300000, guid: ab7d56084302a494ba05a28f4c9d00c7, type: 3}
-  failClip: {fileID: 8300000, guid: 73607fb4e8551f047ad96eee242ea235, type: 3}
 --- !u!136 &793567368
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5402,6 +5514,18 @@ CapsuleCollider:
   m_Height: .0613641739
   m_Direction: 1
   m_Center: {x: -7.4505806e-09, y: -.100000001, z: .12408717}
+--- !u!4 &793567369
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1482776350}
+  m_GameObject: {fileID: 793567365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1482776351}
+  m_RootOrder: 0
 --- !u!108 &793567372
 Light:
   m_ObjectHideFlags: 0
@@ -5449,6 +5573,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -5538,7 +5663,9 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -6886,6 +7013,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -7238,6 +7366,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_PrefabInternal: {fileID: 910848262}
+--- !u!1 &911250609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 134567838}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 134567839}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &911371177
 GameObject:
   m_ObjectHideFlags: 0
@@ -7734,6 +7877,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -8689,7 +8833,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -8729,6 +8875,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -8869,14 +9016,37 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24367a1228cd240b2a726934e30c5f71, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &1253938780 stripped
+--- !u!1 &1253938780
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
   m_PrefabInternal: {fileID: 134567838}
---- !u!4 &1253938781 stripped
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1253938784}
+  - 136: {fileID: 1253938782}
+  - 108: {fileID: 1253938785}
+  - 82: {fileID: 1253938786}
+  - 114: {fileID: 1253938783}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1253938781
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400014, guid: 72e388bcbb7b0d04caff9ab498663cb1, type: 3}
   m_PrefabInternal: {fileID: 134567838}
+  m_GameObject: {fileID: 1540852715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 134567839}
+  m_RootOrder: 1
 --- !u!136 &1253938782
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8901,12 +9071,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedText: 'It''s kinda sweet but teddy bears are bit cliche of Valentine''s
-    Day. '
-  lockedText: You must posess a human to pick up this totem!
-  gameManager: {fileID: 150827916}
-  pickupClip: {fileID: 8300000, guid: ab7d56084302a494ba05a28f4c9d00c7, type: 3}
-  failClip: {fileID: 8300000, guid: 73607fb4e8551f047ad96eee242ea235, type: 3}
+--- !u!4 &1253938784
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 134567838}
+  m_GameObject: {fileID: 1253938780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 134567839}
+  m_RootOrder: 0
 --- !u!108 &1253938785
 Light:
   m_ObjectHideFlags: 0
@@ -8954,6 +9130,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -9288,7 +9465,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -9328,6 +9507,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -9445,10 +9625,39 @@ Prefab:
     - {fileID: 5400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1316950849 stripped
+--- !u!4 &1316950848
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1316950847}
+  m_GameObject: {fileID: 105144474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1316950853}
+  - {fileID: 1316950852}
+  m_Father: {fileID: 1454808302}
+  m_RootOrder: 1
+--- !u!1 &1316950849
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
   m_PrefabInternal: {fileID: 1316950847}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1316950853}
+  - 136: {fileID: 1316950851}
+  - 108: {fileID: 1316950855}
+  - 82: {fileID: 1316950856}
+  - 114: {fileID: 1316950850}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!114 &1316950850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9460,11 +9669,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82b12bedeea81d40a8bd24c0530391e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedText: I vaguely remember using these for a project...
-  lockedText: You must posess a human to pick up this totem!
-  gameManager: {fileID: 150827916}
-  pickupClip: {fileID: 8300000, guid: ab7d56084302a494ba05a28f4c9d00c7, type: 3}
-  failClip: {fileID: 8300000, guid: 73607fb4e8551f047ad96eee242ea235, type: 3}
 --- !u!136 &1316950851
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9478,10 +9682,30 @@ CapsuleCollider:
   m_Height: .0100001795
   m_Direction: 1
   m_Center: {x: 2.98023224e-08, y: 0, z: -.0030171969}
---- !u!4 &1316950852 stripped
+--- !u!4 &1316950852
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 0c24714f8a1e6ae4cb08373ba73aaf5c, type: 2}
   m_PrefabInternal: {fileID: 1316950847}
+  m_GameObject: {fileID: 1521423189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1316950848}
+  m_RootOrder: 1
+--- !u!4 &1316950853
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1316950847}
+  m_GameObject: {fileID: 1316950849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1316950848}
+  m_RootOrder: 0
 --- !u!108 &1316950855
 Light:
   m_ObjectHideFlags: 0
@@ -9529,6 +9753,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -9773,7 +9998,9 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -11594,6 +11821,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_PrefabInternal: {fileID: 1420656880}
+--- !u!1 &1426043896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1482776350}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1482776351}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &1435638520
 Prefab:
   m_ObjectHideFlags: 0
@@ -11843,9 +12085,9 @@ Transform:
   m_LocalPosition: {x: 2.44429874, y: .982733011, z: -5.65788937}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 793567366}
-  - {fileID: 1316950852}
-  - {fileID: 1253938781}
+  - {fileID: 1482776351}
+  - {fileID: 1316950848}
+  - {fileID: 134567839}
   m_Father: {fileID: 0}
   m_RootOrder: 13
 --- !u!1 &1472813523
@@ -11987,6 +12229,20 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9faef2df73c29845b9eddb69c3506e6, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &1482776351
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1482776350}
+  m_GameObject: {fileID: 1426043896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 793567369}
+  - {fileID: 793567366}
+  m_Father: {fileID: 1454808302}
+  m_RootOrder: 0
 --- !u!1001 &1493035368
 Prefab:
   m_ObjectHideFlags: 0
@@ -12041,14 +12297,46 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 6fb03d4b89b0b48bb8a57bc05413c278, type: 2}
   m_PrefabInternal: {fileID: 1493035368}
---- !u!1 &1499881146 stripped
+--- !u!1 &1499881146
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 148464, guid: 877b975135b3cab47a18ada45ff5ec36, type: 2}
   m_PrefabInternal: {fileID: 1703271951}
---- !u!4 &1499881147 stripped
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1499881148}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1499881147
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 474902, guid: 877b975135b3cab47a18ada45ff5ec36, type: 2}
   m_PrefabInternal: {fileID: 1703271951}
+  m_GameObject: {fileID: 267451663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 949442471}
+  m_Father: {fileID: 1703271952}
+  m_RootOrder: 1
+--- !u!4 &1499881148
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1703271951}
+  m_GameObject: {fileID: 1499881146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1703271952}
+  m_RootOrder: 0
 --- !u!1001 &1511381921
 Prefab:
   m_ObjectHideFlags: 0
@@ -12248,7 +12536,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -12288,6 +12578,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -12342,6 +12633,21 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!1 &1521423189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1316950847}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1316950852}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &1523679450
 Prefab:
   m_ObjectHideFlags: 0
@@ -12514,6 +12820,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426092, guid: ff3fd99a6ba4b4156b517d2f07173dfa, type: 2}
   m_PrefabInternal: {fileID: 1527934263}
+--- !u!1 &1540852715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 134567838}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1253938781}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1541064236
 GameObject:
   m_ObjectHideFlags: 0
@@ -13305,6 +13626,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -13767,6 +14089,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -14139,6 +14462,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -14435,6 +14759,20 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 877b975135b3cab47a18ada45ff5ec36, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1703271952
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1703271951}
+  m_GameObject: {fileID: 2145383804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1499881148}
+  - {fileID: 1499881147}
+  m_Father: {fileID: 1839548500}
+  m_RootOrder: 4
 --- !u!1001 &1714653308
 Prefab:
   m_ObjectHideFlags: 0
@@ -14790,6 +15128,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -15152,7 +15491,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -15192,6 +15533,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -15568,7 +15910,7 @@ Transform:
   - {fileID: 1714653309}
   - {fileID: 1988360327}
   - {fileID: 1445629156}
-  - {fileID: 1499881147}
+  - {fileID: 1703271952}
   - {fileID: 1226980168}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -15634,7 +15976,9 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -16005,6 +16349,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -16545,6 +16890,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -16635,7 +16981,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -16940,6 +17288,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -17165,6 +17514,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -17836,7 +18186,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -17876,6 +18228,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -17984,7 +18337,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -18099,6 +18454,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -18278,3 +18634,18 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &2145383804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1703271951}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1703271952}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
